@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kad Kahwin — Haqimi & Nabilah 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --maroon:#6B0F1A;
+  --maroon-deep:#4A0A12;
+  --maroon-mid:#8B1A27;
+  --maroon-light:#C4435A;
+  --gold:#C9A84C;
+  --gold-light:#E2C97E;
+  --gold-pale:#F7F0DC;
+  --white:#FDFAF5;
+  --cream:#F5EDD8;
+  --text:#2A0A0E;
+  --muted:#7A4A50;
+  --border:rgba(201,168,76,0.3);
+}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;overflow-x:hidden;cursor:default}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+
+/* ── MUSIC BTN ── */
+#music-btn{
+  position:fixed;top:18px;right:18px;z-index:9999;
+  width:42px;height:42px;border-radius:50%;
+  background:var(--maroon);border:1px solid var(--gold);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(107,15,26,0.4);
+  transition:all 0.3s;
+}
+#music-btn:hover{transform:scale(1.1);background:var(--gold)}
+#music-btn svg{width:16px;height:16px;fill:var(--gold-light)}
+#music-btn:hover svg{fill:var(--maroon)}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:var(--maroon-deep);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:80px 24px;
+  position:relative;overflow:hidden;
+}
+
+/* geometric background pattern */
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(201,168,76,0.03) 40px,rgba(201,168,76,0.03) 41px),
+    repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(201,168,76,0.03) 40px,rgba(201,168,76,0.03) 41px);
+}
+.hero::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,rgba(107,15,26,0) 0%,rgba(74,10,18,0.8) 100%);
+  pointer-events:none;
+}
+
+/* ornamental circle behind names */
+.hero-ring{
+  position:absolute;width:380px;height:380px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.15);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  animation:ringPulse 4s ease-in-out infinite;
+}
+.hero-ring-2{
+  position:absolute;width:300px;height:300px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.1);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  animation:ringPulse 4s ease-in-out infinite reverse;
+}
+@keyframes ringPulse{
+  0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.03)}
+}
+
+.hero-content{position:relative;z-index:2}
+
+.hero-bismillah{
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;letter-spacing:0.5em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:28px;
+  opacity:0;animation:fadeUp 1s 0.3s forwards;
+}
+.hero-invite{
+  font-family:'Montserrat',sans-serif;font-weight:200;
+  font-size:11px;letter-spacing:0.4em;text-transform:uppercase;
+  color:rgba(247,240,220,0.5);margin-bottom:36px;
+  opacity:0;animation:fadeUp 1s 0.6s forwards;
+}
+.hero-line{
+  width:80px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:0 auto 32px;
+  opacity:0;animation:fadeUp 1s 0.8s forwards;
+}
+
+.hero-groom{
+  font-family:'Playfair Display',serif;font-weight:400;
+  font-size:clamp(38px,8vw,72px);color:var(--white);
+  line-height:1;letter-spacing:0.02em;
+  opacity:0;animation:fadeUp 1s 1s forwards;
+}
+.hero-amp{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(28px,5vw,52px);color:var(--gold);
+  display:block;margin:8px 0;
+  opacity:0;animation:fadeUp 1s 1.2s forwards;
+}
+.hero-bride{
+  font-family:'Playfair Display',serif;font-weight:400;
+  font-size:clamp(38px,8vw,72px);color:var(--white);
+  line-height:1;letter-spacing:0.02em;
+  opacity:0;animation:fadeUp 1s 1.4s forwards;
+}
+.hero-date{
+  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-size:11px;letter-spacing:0.4em;text-transform:uppercase;
+  color:var(--gold-light);margin-top:36px;
+  opacity:0;animation:fadeUp 1s 1.6s forwards;
+}
+.hero-hashtags{
+  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-size:10px;letter-spacing:0.15em;
+  color:rgba(247,240,220,0.35);margin-top:12px;
+  opacity:0;animation:fadeUp 1s 1.8s forwards;
+}
+
+.scroll-hint{
+  position:absolute;bottom:32px;left:0;right:0;
+  z-index:2;text-align:center;
+  display:flex;flex-direction:column;align-items:center;
+  opacity:0;animation:fadeUp 1s 2s forwards;
+}
+.scroll-hint p{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(247,240,220,0.3)}
+.scroll-hint span{display:block;width:1px;height:44px;background:linear-gradient(180deg,var(--gold),transparent);margin:8px auto 0;animation:scrollDown 2s 2.5s infinite}
+@keyframes scrollDown{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1}100%{opacity:0;transform:scaleY(1);transform-origin:top}}
+
+/* ── SECTIONS ── */
+.section{max-width:720px;margin:0 auto;padding:80px 28px}
+.section-full{padding:80px 28px}
+
+.section-eyebrow{
+  font-family:'Montserrat',sans-serif;font-weight:400;
+  font-size:9px;letter-spacing:0.6em;text-transform:uppercase;
+  color:var(--gold);text-align:center;margin-bottom:12px;
+}
+.section-title{
+  font-family:'Playfair Display',serif;font-weight:400;
+  font-size:clamp(26px,4vw,40px);text-align:center;
+  color:var(--maroon-deep);margin-bottom:12px;line-height:1.2;
+}
+.section-title.light{color:var(--white)}
+
+.divider{
+  display:flex;align-items:center;gap:14px;
+  max-width:200px;margin:0 auto 48px;
+}
+.divider::before,.divider::after{
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold));
+}
+.divider::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.divider span{color:var(--gold);font-size:14px;line-height:1}
+
+/* ── FAMILY CARD ── */
+.family-wrap{
+  background:var(--maroon-deep);
+  padding:52px 40px;text-align:center;
+  position:relative;
+}
+.family-wrap::before,.family-wrap::after{
+  content:'';position:absolute;
+  border:1px solid rgba(201,168,76,0.2);
+}
+.family-wrap::before{inset:10px}
+.family-wrap::after{inset:16px}
+
+.family-side-label{
+  font-family:'Montserrat',sans-serif;font-size:9px;
+  letter-spacing:0.5em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+}
+.family-names{
+  font-family:'Playfair Display',serif;font-weight:400;
+  font-size:18px;color:var(--white);line-height:1.8;
+}
+.family-and{
+  color:var(--gold);font-style:italic;font-size:16px;
+}
+.family-sep{
+  width:40px;height:1px;background:rgba(201,168,76,0.3);
+  margin:28px auto;
+}
+.family-invite-text{
+  font-family:'EB Garamond',serif;font-style:italic;
+  font-size:16px;color:rgba(247,240,220,0.5);
+  line-height:1.9;margin:28px 0;
+}
+
+/* ── COUPLE NAMES (big reveal) ── */
+.couple-reveal{
+  background:var(--cream);
+  padding:80px 28px;text-align:center;
+}
+.couple-big-name{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(36px,7vw,64px);
+  color:var(--maroon-deep);line-height:1.1;
+}
+.couple-big-full{
+  font-family:'EB Garamond',serif;font-size:15px;
+  color:var(--muted);margin-top:8px;font-style:italic;
+}
+.couple-big-amp{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(40px,8vw,80px);color:var(--gold);
+  line-height:1;margin:12px 0;
+}
+
+/* ── EVENT CARDS ── */
+.events-bg{background:var(--maroon-deep)}
+.events-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+  max-width:720px;margin:0 auto;
+}
+@media(max-width:520px){.events-grid{grid-template-columns:1fr}}
+
+.event-card{
+  background:rgba(255,255,255,0.03);
+  padding:44px 32px;text-align:center;
+  border:1px solid rgba(201,168,76,0.15);
+  position:relative;overflow:hidden;
+  transition:background 0.3s;
+}
+.event-card:hover{background:rgba(201,168,76,0.05)}
+.event-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.event-tag{
+  font-family:'Montserrat',sans-serif;font-size:8px;
+  letter-spacing:0.6em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;display:block;
+}
+.event-name{
+  font-family:'Playfair Display',serif;
+  font-size:26px;color:var(--white);margin-bottom:20px;
+}
+.event-detail-row{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:10px;justify-content:center;
+}
+.event-detail-row svg{width:12px;height:12px;stroke:var(--gold);fill:none;flex-shrink:0}
+.event-detail-row span{
+  font-family:'Montserrat',sans-serif;font-size:11px;
+  color:rgba(247,240,220,0.6);letter-spacing:0.05em;
+  line-height:1.6;
+}
+.event-sep{width:30px;height:1px;background:rgba(201,168,76,0.2);margin:20px auto}
+
+.map-btns{display:flex;gap:8px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.map-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 14px;font-family:'Montserrat',sans-serif;
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  text-decoration:none;border:1px solid rgba(201,168,76,0.3);
+  color:var(--gold-light);transition:all 0.25s;
+}
+.map-btn:hover{background:var(--gold);color:var(--maroon-deep);border-color:var(--gold)}
+.map-btn svg{width:12px;height:12px;stroke:currentColor;fill:none}
+
+/* ── COUNTDOWN ── */
+.countdown-section{
+  background:var(--maroon);
+  padding:80px 28px;text-align:center;
+}
+.countdown-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;max-width:440px;margin:40px auto 0;
+  border:1px solid rgba(201,168,76,0.2);
+}
+@media(max-width:380px){.countdown-grid{grid-template-columns:repeat(2,1fr)}}
+.count-cell{
+  padding:28px 16px;
+  border-right:1px solid rgba(201,168,76,0.15);
+  position:relative;
+}
+.count-cell:last-child{border-right:none}
+.count-num{
+  font-family:'Playfair Display',serif;
+  font-size:48px;font-weight:400;line-height:1;
+  color:var(--gold-light);
+}
+.count-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:7px;letter-spacing:0.5em;text-transform:uppercase;
+  color:rgba(247,240,220,0.3);margin-top:6px;
+}
+
+
+
+/* ── RSVP ── */
+.rsvp-section{background:var(--maroon-deep);padding:80px 28px}
+.rsvp-inner{max-width:480px;margin:0 auto}
+.rsvp-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(201,168,76,0.2);
+  padding:44px 36px;
+  position:relative;
+}
+.rsvp-card::before{
+  content:'';position:absolute;
+  top:8px;left:8px;right:8px;bottom:8px;
+  border:1px solid rgba(201,168,76,0.08);
+  pointer-events:none;
+}
+.form-group{margin-bottom:20px}
+.form-label{
+  display:block;font-family:'Montserrat',sans-serif;
+  font-size:8px;letter-spacing:0.5em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:8px;
+}
+.form-input,.form-select,.form-textarea{
+  width:100%;padding:12px 14px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(201,168,76,0.2);
+  color:var(--white);
+  font-family:'EB Garamond',serif;font-size:16px;
+  outline:none;transition:border-color 0.2s;
+  border-radius:0;-webkit-appearance:none;
+}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(247,240,220,0.2)}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold)}
+.form-select option{background:var(--maroon-deep);color:var(--white)}
+.form-textarea{resize:vertical;min-height:80px}
+
+.attend-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.attend-opt{position:relative}
+.attend-opt input{position:absolute;opacity:0;pointer-events:none}
+.attend-opt label{
+  display:block;padding:11px;text-align:center;
+  border:1px solid rgba(201,168,76,0.2);cursor:pointer;
+  font-family:'Montserrat',sans-serif;font-size:10px;
+  letter-spacing:0.2em;text-transform:uppercase;
+  color:rgba(247,240,220,0.4);transition:all 0.2s;
+}
+.attend-opt input:checked+label{
+  background:var(--gold);color:var(--maroon-deep);
+  border-color:var(--gold);font-weight:500;
+}
+
+.submit-btn{
+  width:100%;padding:15px;margin-top:8px;
+  background:var(--gold);color:var(--maroon-deep);
+  border:none;cursor:pointer;
+  font-family:'Montserrat',sans-serif;font-weight:500;
+  font-size:10px;letter-spacing:0.4em;text-transform:uppercase;
+  transition:all 0.25s;
+}
+.submit-btn:hover{background:var(--gold-light)}
+
+.success-msg{display:none;text-align:center;padding:20px 0}
+.success-icon{
+  width:52px;height:52px;border-radius:50%;
+  background:var(--gold);color:var(--maroon-deep);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 16px;font-size:22px;font-weight:bold;
+}
+.success-msg .s-title{
+  font-family:'Playfair Display',serif;
+  font-size:24px;color:var(--white);margin-bottom:8px;
+}
+.success-msg .s-sub{
+  font-family:'EB Garamond',serif;font-style:italic;
+  font-size:15px;color:rgba(247,240,220,0.5);
+}
+
+/* ── WISHES ── */
+.wishes-section{background:var(--cream);padding:80px 28px}
+.wishes-grid{display:grid;gap:16px;max-width:680px;margin:40px auto 0}
+.wish-card{
+  background:var(--white);
+  border-left:3px solid var(--gold);
+  padding:20px 24px;
+}
+.wish-text{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:17px;color:var(--text);line-height:1.7;
+  margin-bottom:10px;
+}
+.wish-meta{
+  font-family:'Montserrat',sans-serif;font-size:10px;
+  letter-spacing:0.1em;color:var(--muted);
+}
+.wish-meta strong{color:var(--maroon)}
+
+/* ── FOOTER ── */
+.footer{
+  background:var(--maroon-deep);
+  padding:80px 28px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.footer::before{
+  content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(201,168,76,0.02) 40px,rgba(201,168,76,0.02) 41px),repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(201,168,76,0.02) 40px,rgba(201,168,76,0.02) 41px);
+}
+.footer-content{position:relative;z-index:1;max-width:520px;margin:0 auto}
+.footer-ornament{margin-bottom:28px;opacity:0.5}
+.footer-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(32px,6vw,56px);color:var(--gold-light);
+  margin-bottom:28px;line-height:1.1;
+}
+.footer-ayat{
+  font-family:'EB Garamond',serif;font-style:italic;
+  font-size:16px;color:rgba(247,240,220,0.5);
+  line-height:2;max-width:420px;margin:0 auto 32px;
+}
+.footer-sep{width:60px;height:1px;background:rgba(201,168,76,0.3);margin:32px auto}
+.footer-contacts{
+  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-size:12px;color:rgba(247,240,220,0.4);
+  line-height:2.2;
+}
+.footer-contacts a{color:var(--gold-light);text-decoration:none}
+.footer-hashtags{
+  margin-top:28px;
+  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-size:11px;letter-spacing:0.1em;
+  color:var(--gold);line-height:2;
+}
+.footer-credit{
+  margin-top:40px;font-family:'Montserrat',sans-serif;
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:rgba(247,240,220,0.15);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.9s ease,transform 0.9s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+
+/* ── GOLD PARTICLES ── */
+.particle{
+  position:fixed;pointer-events:none;z-index:0;
+  border-radius:50%;background:var(--gold);
+  animation:floatUp linear infinite;
+  opacity:0;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) rotate(0deg);opacity:0}
+  10%{opacity:0.4}
+  90%{opacity:0.1}
+  100%{transform:translateY(-100vh) rotate(720deg);opacity:0}
+}
+
+/* ══════════════════════════════
+   MOBILE RESPONSIVE — full overhaul
+   Target: WhatsApp sharing, 360–480px screens
+══════════════════════════════ */
+
+/* Base touch targets */
+a, button { -webkit-tap-highlight-color: transparent; }
+input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
+
+@media(max-width:768px){
+  /* ── Hero ── */
+  .hero { padding: 70px 20px 80px; }
+  .hero-ring  { width: 280px; height: 280px; }
+  .hero-ring-2{ width: 220px; height: 220px; }
+  .hero-bismillah { font-size: 9px; letter-spacing: 0.3em; margin-bottom: 20px; }
+  .hero-invite    { font-size: 10px; letter-spacing: 0.25em; margin-bottom: 24px; }
+  .hero-date      { font-size: 10px; letter-spacing: 0.25em; margin-top: 24px; }
+  .hero-hashtags  { font-size: 9px; }
+
+  /* ── Sections ── */
+  .section { padding: 56px 20px; }
+  .section-full { padding: 56px 20px; }
+  .section-eyebrow { font-size: 8px; letter-spacing: 0.45em; }
+  .section-title { font-size: 26px; }
+
+  /* ── Family card ── */
+  .family-wrap { padding: 36px 20px; }
+  .family-wrap::before { inset: 8px; }
+  .family-wrap::after  { inset: 13px; }
+  .family-names  { font-size: 16px; line-height: 1.9; }
+  .family-invite-text { font-size: 14px; }
+
+  /* ── Couple reveal ── */
+  .couple-reveal { padding: 56px 20px; }
+  .couple-big-name { font-size: 36px; }
+  .couple-big-full { font-size: 13px; }
+  .couple-big-amp  { font-size: 52px; }
+
+  /* ── Event card ── */
+  .event-card { padding: 36px 20px; }
+  .event-name { font-size: 22px; }
+  .event-detail-row span { font-size: 12px; }
+  .map-btns { gap: 8px; }
+  .map-btn { padding: 10px 14px; font-size: 9px; letter-spacing: 0.2em; }
+
+  /* ── Countdown ── */
+  .countdown-section { padding: 56px 20px; }
+  .countdown-grid { max-width: 100%; }
+  .count-num   { font-size: 40px; }
+  .count-label { font-size: 7px; }
+  .count-cell  { padding: 22px 10px; }
+
+  /* ── RSVP ── */
+  .rsvp-section { padding: 56px 20px; }
+  .rsvp-card    { padding: 28px 18px; }
+  .rsvp-card::before { inset: 6px; }
+  .submit-btn   { padding: 16px; font-size: 11px; }
+
+  /* ── Wishes ── */
+  .wishes-section { padding: 56px 20px; }
+  .wish-text { font-size: 15px; }
+
+  /* ── Footer ── */
+  .footer { padding: 60px 20px; }
+  .footer-title { font-size: 34px; }
+  .footer-ayat  { font-size: 14px; }
+  .footer-hashtags { font-size: 10px; }
+  .footer-contacts { font-size: 11px; }
+}
+
+@media(max-width:480px){
+  /* ── Hero names bigger on small screens for impact ── */
+  .hero-groom, .hero-bride { letter-spacing: 0; }
+
+  /* ── Family ── */
+  .family-wrap { padding: 28px 16px; }
+  .family-names { font-size: 15px; }
+
+  /* ── Couple ── */
+  .couple-big-name { font-size: 30px; }
+  .couple-big-amp  { font-size: 44px; margin: 6px 0; }
+
+  /* ── Countdown: 2x2 grid on very small screens ── */
+  .countdown-grid { grid-template-columns: repeat(2,1fr); }
+  .count-cell:nth-child(2) { border-right: none; }
+  .count-cell:nth-child(3) {
+    border-top: 1px solid rgba(201,168,76,0.15);
+    border-right: 1px solid rgba(201,168,76,0.15);
+  }
+  .count-cell:nth-child(4) {
+    border-top: 1px solid rgba(201,168,76,0.15);
+    border-right: none;
+  }
+  .count-num { font-size: 38px; }
+
+  /* ── Map buttons stack on very small ── */
+  .map-btns { flex-direction: column; align-items: stretch; }
+  .map-btn  { justify-content: center; padding: 12px; }
+
+  /* ── RSVP attend grid ── */
+  .attend-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .attend-opt label { padding: 12px 8px; font-size: 9px; }
+
+  /* ── Footer ── */
+  .footer-title { font-size: 28px; }
+  .footer-contacts { line-height: 2.4; }
+}
+
+@media(max-width:360px){
+  .hero { padding: 60px 16px 70px; }
+  .section, .section-full { padding: 48px 16px; }
+  .couple-big-name { font-size: 26px; }
+  .family-names { font-size: 14px; }
+  .rsvp-card { padding: 24px 14px; }
+  .event-card { padding: 28px 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Music -->
+<button id="music-btn" title="Toggle Muzik" aria-label="Toggle muzik latar">
+  <svg id="music-icon" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13M9 18c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-2c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z" stroke-width="1.5" stroke="currentColor" fill="none"/></svg>
+</button>
+<audio id="bg-music" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Particles -->
+<div id="particles-wrap"></div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<div class="hero">
+  <div class="hero-ring"></div>
+  <div class="hero-ring-2"></div>
+  <div class="hero-content">
+    <p class="hero-bismillah">﷽ — Bismillahirrahmanirrahim</p>
+    <p class="hero-invite">Dengan penuh kerendahan hati, kami menjemput kehadiran</p>
+    <div class="hero-line"></div>
+    <div class="hero-groom">Haqimi</div>
+    <div class="hero-amp">&amp;</div>
+    <div class="hero-bride">Nabilah</div>
+    <p class="hero-date">Isnin &nbsp;·&nbsp; 31 Ogos 2026 &nbsp;·&nbsp; Malaysia</p>
+    <p class="hero-hashtags">#BellaFoundHerQimistry &nbsp;·&nbsp; #QimiRingTheBella &nbsp;·&nbsp; #QimiBella2026</p>
+  </div>
+  <div class="scroll-hint">
+    <p>Tatal ke bawah</p>
+    <span></span>
+  </div>
+</div>
+
+<!-- ══════════════ FAMILY ══════════════ -->
+<section class="section reveal">
+  <p class="section-eyebrow">Jemputan Daripada</p>
+  <h2 class="section-title">Keluarga Pengantin</h2>
+  <div class="divider"><span>✦</span></div>
+
+  <div class="family-wrap">
+    <p class="family-side-label">Pengantin Lelaki</p>
+    <div class="family-names">
+      Hj. Harun Bin Salleh<br>
+      <span class="family-and">&amp;</span><br>
+      Hjh. Che Ku Noorhayati Binti Che Ku Jusoh
+    </div>
+    <div class="family-invite-text">
+      dengan penuh kegembiraan dan kebanggaan<br>
+      menjemput kehadiran Tuan / Puan<br>
+      ke majlis perkahwinan putera mereka
+    </div>
+
+    <div class="family-sep"></div>
+
+    <p class="family-side-label">Pengantin Perempuan</p>
+    <div class="family-names">
+      Zahar Bin Ithnin<br>
+      <span class="family-and">&amp;</span><br>
+      Sa'diah Binti Othman
+    </div>
+    <div class="family-invite-text">
+      turut menjemput kehadiran Tuan / Puan<br>
+      ke majlis perkahwinan puteri mereka
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ COUPLE ══════════════ -->
+<div class="couple-reveal reveal">
+  <p class="section-eyebrow">Bakal Pengantin</p>
+  <div class="divider"><span>✦</span></div>
+
+  <div class="couple-big-name reveal reveal-delay-1">Muhammad Haqimi</div>
+  <div class="couple-big-full reveal reveal-delay-1">Muhammad Haqimi bin Harun</div>
+  <div class="couple-big-amp reveal reveal-delay-2">&amp;</div>
+  <div class="couple-big-name reveal reveal-delay-3">Nadiatul Nabilah</div>
+  <div class="couple-big-full reveal reveal-delay-3">Nadiatul Nabilah binti Zahar</div>
+</div>
+
+<!-- ══════════════ EVENTS ══════════════ -->
+<div class="events-bg section-full reveal">
+  <div style="max-width:600px;margin:0 auto;padding:80px 28px 40px">
+    <p class="section-eyebrow">Aturcara Majlis</p>
+    <h2 class="section-title light">Jemputan Kehadiran</h2>
+    <div class="divider"><span>✦</span></div>
+
+    <!-- Single merged card -->
+    <div class="event-card reveal" style="max-width:520px;margin:0 auto">
+      <span class="event-tag">Isnin · 31 Ogos 2026</span>
+
+      <!-- Akad Nikah row -->
+      <div style="margin-top:24px;margin-bottom:8px">
+        <div class="event-name" style="font-size:20px;margin-bottom:14px">Akad Nikah</div>
+        <div class="event-detail-row">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>8:30 pagi — 10:00 pagi</span>
+        </div>
+        <div class="event-detail-row" style="align-items:flex-start">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" style="margin-top:2px"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          <span>Masjid Al-Abrar, Balik Bukit</span>
+        </div>
+        <div class="map-btns" style="margin-top:14px">
+          <a class="map-btn" href="https://waze.com/ul?q=masjid&navigate=yes" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Waze
+          </a>
+          <a class="map-btn" href="https://maps.app.goo.gl/LAggeYKn4twPCZmu7" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div class="event-sep"></div>
+
+      <!-- Walimatul Urus row -->
+      <div style="margin-bottom:8px">
+        <div class="event-name" style="font-size:20px;margin-bottom:14px">Walimatul 'Urus</div>
+        <div class="event-detail-row">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>12:00 tengah hari — 5:00 petang</span>
+        </div>
+        <div class="event-detail-row" style="align-items:flex-start">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" style="margin-top:2px"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          <span>Rumah Pengantin Perempuan<br>Balik Bukit, Melaka</span>
+        </div>
+        <div class="map-btns" style="margin-top:14px">
+          <a class="map-btn" href="https://waze.com/ul?q=https://maps.app.goo.gl/JoRdubGkanzUXzLk8&navigate=yes" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Waze
+          </a>
+          <a class="map-btn" href="https://maps.app.goo.gl/JoRdubGkanzUXzLk8" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="height:60px"></div>
+</div>
+
+<!-- ══════════════ COUNTDOWN ══════════════ -->
+<div class="countdown-section reveal">
+  <p class="section-eyebrow">Hitung Detik Menuju Hari Bahagia</p>
+  <h2 class="section-title light">Masa Berbaki</h2>
+  <div class="divider"><span>✦</span></div>
+  <div class="countdown-grid">
+    <div class="count-cell"><div class="count-num" id="cd-days">--</div><div class="count-label">Hari</div></div>
+    <div class="count-cell"><div class="count-num" id="cd-hours">--</div><div class="count-label">Jam</div></div>
+    <div class="count-cell"><div class="count-num" id="cd-mins">--</div><div class="count-label">Minit</div></div>
+    <div class="count-cell" style="border-right:none"><div class="count-num" id="cd-secs">--</div><div class="count-label">Saat</div></div>
+  </div>
+</div>
+
+<!-- ══════════════ RSVP ══════════════ -->
+<div class="rsvp-section reveal">
+  <div class="rsvp-inner">
+    <p class="section-eyebrow">Pengesahan Kehadiran</p>
+    <h2 class="section-title light">RSVP</h2>
+    <div class="divider"><span>✦</span></div>
+    <p style="text-align:center;font-family:'EB Garamond',serif;font-style:italic;font-size:16px;color:rgba(247,240,220,0.4);margin-bottom:36px;line-height:1.8">
+      Mohon sahkan kehadiran sebelum <strong style="color:var(--gold-light)">24 Ogos 2026</strong>.<br>Kehadiran anda amat bermakna bagi kami.
+    </p>
+    <div class="rsvp-card">
+      <div id="form-body">
+        <div class="form-group">
+          <label class="form-label" for="rsvp-name">Nama Penuh</label>
+          <input id="rsvp-name" class="form-input" type="text" placeholder="cth: Ahmad bin Ali" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvp-phone">No. Telefon</label>
+          <input id="rsvp-phone" class="form-input" type="tel" placeholder="cth: 0123456789" autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Majlis Dihadiri</label>
+          <select class="form-select" id="rsvp-event">
+            <option value="">-- Pilih --</option>
+            <option>Hadir (Akad Nikah &amp; Walimatul 'Urus)</option>
+            <option>Hadir (Walimatul 'Urus sahaja)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvp-pax">Bilangan Kehadiran</label>
+          <input id="rsvp-pax" class="form-input" type="number" min="1" max="10" placeholder="cth: 2">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Kehadiran</label>
+          <div class="attend-grid">
+            <div class="attend-opt">
+              <input type="radio" name="attend" id="att-yes" value="hadir" checked>
+              <label for="att-yes">✓ &nbsp;Hadir</label>
+            </div>
+            <div class="attend-opt">
+              <input type="radio" name="attend" id="att-no" value="tidak">
+              <label for="att-no">✗ &nbsp;Tidak Dapat</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvp-wish">Ucapan / Doa Restu (Pilihan)</label>
+          <textarea id="rsvp-wish" class="form-textarea" placeholder="Tuliskan ucapan anda..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="submitRSVP()">Hantar Pengesahan</button>
+      </div>
+      <div class="success-msg" id="rsvp-success">
+        <div class="success-icon">✓</div>
+        <div class="s-title">Terima Kasih, <span id="success-name"></span>!</div>
+        <div class="s-sub">Kehadiran anda telah dicatatkan.<br>Kami menantikan kedatangan anda.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ WISHES ══════════════ -->
+<div class="wishes-section reveal">
+  <div style="max-width:720px;margin:0 auto">
+    <p class="section-eyebrow">Ucapan Tamu</p>
+    <h2 class="section-title">Doa &amp; Ucapan</h2>
+    <div class="divider"><span>✦</span></div>
+    <div class="wishes-grid" id="wishes-list">
+      <div class="wish-card">
+        <div class="wish-text">"Semoga perkahwinan ini diberkati Allah dan dipenuhi kasih sayang yang abadi. Selamat pengantin baru!"</div>
+        <div class="wish-meta"><strong>Encik Ridzuan &amp; Keluarga</strong> &nbsp;·&nbsp; Kuala Lumpur</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-text">"Barakallahu lakuma wa baraka 'alaykuma wa jama'a baynakuma fi khair. Tahniah buat Haqimi &amp; Nabilah!"</div>
+        <div class="wish-meta"><strong>Ustaz Fadzil</strong> &nbsp;·&nbsp; Selangor</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-text">"#BellaFoundHerQimistry — Sungguh indah jodoh yang Allah aturkan. Semoga kekal bahagia dunia akhirat."</div>
+        <div class="wish-meta"><strong>Rakan-rakan Universiti</strong> &nbsp;·&nbsp; Malaysia</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<div class="footer reveal">
+  <div class="footer-content">
+    <svg class="footer-ornament" width="70" height="70" viewBox="0 0 70 70" fill="none">
+      <circle cx="35" cy="35" r="32" stroke="#C9A84C" stroke-width="0.6"/>
+      <circle cx="35" cy="35" r="24" stroke="#C9A84C" stroke-width="0.4" opacity="0.5"/>
+      <path d="M35 3v64M3 35h64" stroke="#C9A84C" stroke-width="0.4" opacity="0.3"/>
+      <path d="M12 12l46 46M58 12L12 58" stroke="#C9A84C" stroke-width="0.4" opacity="0.2"/>
+      <circle cx="35" cy="35" r="5" stroke="#C9A84C" stroke-width="0.6"/>
+      <circle cx="35" cy="3" r="2" fill="#C9A84C"/>
+      <circle cx="35" cy="67" r="2" fill="#C9A84C"/>
+      <circle cx="3" cy="35" r="2" fill="#C9A84C"/>
+      <circle cx="67" cy="35" r="2" fill="#C9A84C"/>
+    </svg>
+
+    <div class="footer-title">Haqimi &amp; Nabilah</div>
+
+    <div class="footer-ayat">
+      "Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan isteri-isteri untuk kamu dari jenis kamu sendiri, supaya kamu bersenang hati dan hidup mesra dengannya."
+      <br><span style="font-size:13px;color:rgba(247,240,220,0.3)">— Surah Ar-Rum: 21</span>
+    </div>
+
+    <div class="footer-sep"></div>
+
+    <div class="footer-contacts">
+      Sebarang pertanyaan, hubungi:<br>
+      <a href="tel:+601798198569">+60 17-981 9856</a> (Haqimi)
+      &nbsp;|&nbsp;
+      <a href="tel:+601962444390">+60 19-624 4439</a> (Nabilah)
+    </div>
+
+    <div class="footer-hashtags">
+      #BellaFoundHerQimistry &nbsp;·&nbsp; #QimiRingTheBella<br>#QimiBella2026
+    </div>
+
+    <div class="footer-credit">Kad Kahwin Digital &nbsp;·&nbsp; 31.08.2026</div>
+  </div>
+</div>
+
+<script>
+// ── Gold particles
+(function(){
+  const wrap = document.getElementById('particles-wrap');
+  for(let i=0;i<14;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    const size=2+Math.random()*4;
+    p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:${Math.random()*-20}px;animation-duration:${12+Math.random()*16}s;animation-delay:${Math.random()*10}s;`;
+    wrap.appendChild(p);
+  }
+})();
+
+// ── Countdown
+function updateCountdown(){
+  const target=new Date('2026-08-31T09:00:00+08:00').getTime();
+  const diff=target-Date.now();
+  if(diff<0){
+    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id=>document.getElementById(id).textContent='00');
+    return;
+  }
+  document.getElementById('cd-days').textContent=String(Math.floor(diff/86400000)).padStart(2,'0');
+  document.getElementById('cd-hours').textContent=String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
+  document.getElementById('cd-mins').textContent=String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+  document.getElementById('cd-secs').textContent=String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+// ── Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ── Music
+let playing=false;
+const audio=document.getElementById('bg-music');
+document.getElementById('music-btn').addEventListener('click',()=>{
+  if(playing){audio.pause();playing=false;}
+  else{audio.volume=0.25;audio.play().catch(()=>{});playing=true;}
+});
+
+// ── RSVP
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyv1hrKWWezd0lIqOJwIEmYpF4KbQsJahtEfXNmzjTf7ZFnyKdj9lk3zALYhv0WWvbe/exec';
+
+function submitRSVP(){
+  const name     = document.getElementById('rsvp-name').value.trim();
+  const phone    = document.getElementById('rsvp-phone').value.trim();
+  const event    = document.getElementById('rsvp-event').value;
+  const pax      = document.getElementById('rsvp-pax').value || '1';
+  const kehadiran= document.querySelector('input[name="attend"]:checked').value;
+  const wish     = document.getElementById('rsvp-wish').value.trim();
+
+  if(!name)   { alert('Sila masukkan nama anda.');return; }
+  if(!phone)  { alert('Sila masukkan nombor telefon.');return; }
+  if(!event)  { alert('Sila pilih majlis yang akan dihadiri.');return; }
+
+  // Show loading state
+  const btn = document.querySelector('.submit-btn');
+  btn.textContent = 'Menghantar...';
+  btn.disabled = true;
+
+  const payload = { nama: name, telefon: phone, majlis: event, bilangan: pax, kehadiran, ucapan: wish };
+
+  fetch(SHEET_URL, {
+    method: 'POST',
+    mode: 'no-cors', // Apps Script requires no-cors
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(() => {
+    // no-cors means we can't read response, assume success
+    if(wish){
+      const list = document.getElementById('wishes-list');
+      const card = document.createElement('div');
+      card.className = 'wish-card';
+      card.style.cssText = 'opacity:0;transform:translateY(16px);transition:all 0.6s';
+      card.innerHTML = `<div class="wish-text">"${wish}"</div><div class="wish-meta"><strong>${name}</strong> &nbsp;·&nbsp; Baru sahaja</div>`;
+      list.insertBefore(card, list.firstChild);
+      setTimeout(()=>{ card.style.opacity='1'; card.style.transform='none'; }, 50);
+    }
+    document.getElementById('form-body').style.display = 'none';
+    document.getElementById('success-name').textContent = name.split(' ')[0];
+    document.getElementById('rsvp-success').style.display = 'block';
+  })
+  .catch(() => {
+    btn.textContent = 'Hantar Pengesahan';
+    btn.disabled = false;
+    alert('Ralat sambungan. Sila cuba semula.');
+  });
+}
+</script>
+</body>
+</html>
