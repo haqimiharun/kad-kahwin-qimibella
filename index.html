@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kad Kahwin — Haqimi & Nabilah 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -55,8 +55,8 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .hero::before{
   content:'';position:absolute;inset:0;
   background-image:
-    repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(201,168,76,0.03) 40px,rgba(201,168,76,0.03) 41px),
-    repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(201,168,76,0.03) 40px,rgba(201,168,76,0.03) 41px);
+    repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(201,168,76,0.08) 30px,rgba(201,168,76,0.08) 31px),
+    repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(201,168,76,0.08) 30px,rgba(201,168,76,0.08) 31px);
 }
 .hero::after{
   content:'';position:absolute;inset:0;
@@ -104,21 +104,21 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 
 .hero-groom{
-  font-family:'Playfair Display',serif;font-weight:400;
-  font-size:clamp(38px,8vw,72px);color:var(--white);
-  line-height:1;letter-spacing:0.02em;
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(52px,11vw,96px);color:var(--white);
+  line-height:1.1;letter-spacing:0.01em;
   opacity:0;animation:fadeUp 1s 1s forwards;
 }
 .hero-amp{
-  font-family:'Playfair Display',serif;font-style:italic;
-  font-size:clamp(28px,5vw,52px);color:var(--gold);
-  display:block;margin:8px 0;
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(36px,7vw,64px);color:var(--gold);
+  display:block;margin:4px 0;
   opacity:0;animation:fadeUp 1s 1.2s forwards;
 }
 .hero-bride{
-  font-family:'Playfair Display',serif;font-weight:400;
-  font-size:clamp(38px,8vw,72px);color:var(--white);
-  line-height:1;letter-spacing:0.02em;
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(52px,11vw,96px);color:var(--white);
+  line-height:1.1;letter-spacing:0.01em;
   opacity:0;animation:fadeUp 1s 1.4s forwards;
 }
 .hero-date{
@@ -608,21 +608,22 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .savedate-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);color:var(--maroon-deep);background:var(--white);transition:all 0.25s}
 .savedate-btn:hover{background:var(--gold)}
 
-/* ── SALAM DIGITAL ── */
-.salam-section{background:var(--maroon-deep);padding:80px 28px;text-align:center}
-.salam-card{max-width:400px;margin:40px auto 0;background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);padding:40px 32px;position:relative}
-.salam-card::before{content:'';position:absolute;inset:8px;border:1px solid rgba(201,168,76,0.08);pointer-events:none}
-.salam-bank{font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.5em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.salam-acc{font-family:'Playfair Display',serif;font-size:28px;color:var(--white);margin-bottom:8px;letter-spacing:0.05em}
-.salam-name{font-family:'EB Garamond',serif;font-style:italic;font-size:15px;color:rgba(247,240,220,0.45);margin-bottom:28px}
+/* ── SALAM MINI TOGGLE ── */
+.salam-mini{text-align:center;padding:20px 28px 32px;background:var(--cream)}
+.salam-toggle-btn{background:none;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(122,74,80,0.45);transition:color 0.2s;padding:4px 0}
+.salam-toggle-btn:hover{color:var(--maroon)}
+.salam-panel{max-height:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;opacity:0}
+.salam-panel.open{max-height:400px;opacity:1}
+.salam-inner{display:inline-block;margin-top:16px;background:var(--white);border:1px solid rgba(201,168,76,0.25);padding:20px 28px;text-align:center;min-width:260px}
+.salam-bank{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.salam-acc{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:4px}
+.salam-name{font-family:'EB Garamond',serif;font-style:italic;font-size:14px;color:var(--muted);margin-bottom:16px}
 .salam-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.salam-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);transition:all 0.25s}
+.salam-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;border:1px solid rgba(201,168,76,0.35);color:var(--maroon);transition:all 0.2s}
 .salam-btn:hover{background:var(--gold);color:var(--maroon-deep);border-color:var(--gold)}
-.salam-qr{width:150px;height:150px;margin:24px auto 0;background:var(--white);display:none;align-items:center;justify-content:center;border:1px solid rgba(201,168,76,0.3)}
+.salam-qr{width:140px;height:140px;margin:16px auto 0;background:var(--white);display:none;align-items:center;justify-content:center;border:1px solid rgba(201,168,76,0.25)}
 .salam-qr.show{display:flex}
-.salam-qr img{width:130px;height:130px;object-fit:contain}
-.salam-qr-ph{width:130px;height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:var(--cream);font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase}
-.salam-note{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.2em;color:rgba(247,240,220,0.2);margin-top:20px}
+.salam-qr img{width:120px;height:120px;object-fit:contain}
 
 /* ── HUBUNGI ── */
 .hubungi-section{background:var(--cream);padding:60px 28px;text-align:center}
@@ -632,9 +633,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .wa-btn svg{width:17px;height:17px;fill:#fff;flex-shrink:0}
 
 @media(max-width:768px){
-  .gallery-section,.savedate-section,.salam-section,.hubungi-section{padding:56px 20px}
+  .gallery-section,.savedate-section,.hubungi-section{padding:56px 20px}
   .savedate-btn{padding:12px 16px;font-size:8px}
-  .salam-card{padding:28px 18px}
   .salam-acc{font-size:24px}
   .hubungi-btns{flex-direction:column;align-items:stretch}
   .wa-btn{justify-content:center}
@@ -671,7 +671,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <div class="hero-groom">Haqimi</div>
     <div class="hero-amp">&amp;</div>
     <div class="hero-bride">Nabilah</div>
-    <p class="hero-date">Isnin &nbsp;·&nbsp; 31 Ogos 2026 &nbsp;·&nbsp; Malaysia</p>
+    <p class="hero-date">Isnin &nbsp;·&nbsp; 31 Ogos 2026</p>
     <p class="hero-hashtags">#BellaFoundHerQimistry &nbsp;·&nbsp; #QimiRingTheBella &nbsp;·&nbsp; #QimiBella2026</p>
   </div>
   <div class="scroll-hint">
@@ -687,20 +687,6 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   <div class="divider"><span>✦</span></div>
 
   <div class="family-wrap">
-    <p class="family-side-label">Pengantin Lelaki</p>
-    <div class="family-names">
-      Hj. Harun Bin Salleh<br>
-      <span class="family-and">&amp;</span><br>
-      Hjh. Che Ku Noorhayati Binti Che Ku Jusoh
-    </div>
-    <div class="family-invite-text">
-      dengan penuh kegembiraan dan kebanggaan<br>
-      menjemput kehadiran Tuan / Puan<br>
-      ke majlis perkahwinan putera mereka
-    </div>
-
-    <div class="family-sep"></div>
-
     <p class="family-side-label">Pengantin Perempuan</p>
     <div class="family-names">
       Zahar Bin Ithnin<br>
@@ -708,8 +694,22 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       Sa'diah Binti Othman
     </div>
     <div class="family-invite-text">
-      turut menjemput kehadiran Tuan / Puan<br>
+      dengan penuh kegembiraan dan kebanggaan<br>
+      menjemput kehadiran Tuan / Puan<br>
       ke majlis perkahwinan puteri mereka
+    </div>
+
+    <div class="family-sep"></div>
+
+    <p class="family-side-label">Pengantin Lelaki</p>
+    <div class="family-names">
+      Hj. Harun Bin Salleh<br>
+      <span class="family-and">&amp;</span><br>
+      Hjh. Che Ku Noorhayati Binti Che Ku Jusoh
+    </div>
+    <div class="family-invite-text">
+      turut menjemput kehadiran Tuan / Puan<br>
+      ke majlis perkahwinan putera mereka
     </div>
   </div>
 </section>
@@ -724,41 +724,6 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   <div class="couple-big-amp reveal reveal-delay-2">&amp;</div>
   <div class="couple-big-name reveal reveal-delay-3">Nadiatul Nabilah</div>
   <div class="couple-big-full reveal reveal-delay-3">Nadiatul Nabilah binti Zahar</div>
-</div>
-
-<!-- ══════════════ GALLERY ══════════════ -->
-<div class="gallery-section reveal">
-  <div style="max-width:720px;margin:0 auto;text-align:center">
-    <p class="section-eyebrow">Kenangan Bersama</p>
-    <h2 class="section-title">Galeri</h2>
-    <div class="divider"><span>✦</span></div>
-    <div class="gallery-grid">
-      <div class="gallery-item main-photo" onclick="openLightbox(0)">
-        <div class="gallery-ph"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="3" y="7" width="18" height="14" rx="1"/><circle cx="12" cy="14" r="3"/><path d="M8 7l1.5-3h5L16 7"/></svg>Foto 1</div>
-        <img src="photo1.jpg" alt="Foto 1" onload="this.classList.add('loaded')" onerror="this.remove()">
-      </div>
-      <div class="gallery-item" onclick="openLightbox(1)">
-        <div class="gallery-ph"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="3" y="7" width="18" height="14" rx="1"/><circle cx="12" cy="14" r="3"/><path d="M8 7l1.5-3h5L16 7"/></svg>Foto 2</div>
-        <img src="photo2.jpg" alt="Foto 2" onload="this.classList.add('loaded')" onerror="this.remove()">
-      </div>
-      <div class="gallery-item" onclick="openLightbox(2)">
-        <div class="gallery-ph"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="3" y="7" width="18" height="14" rx="1"/><circle cx="12" cy="14" r="3"/><path d="M8 7l1.5-3h5L16 7"/></svg>Foto 3</div>
-        <img src="photo3.jpg" alt="Foto 3" onload="this.classList.add('loaded')" onerror="this.remove()">
-      </div>
-      <div class="gallery-item" onclick="openLightbox(3)">
-        <div class="gallery-ph"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="3" y="7" width="18" height="14" rx="1"/><circle cx="12" cy="14" r="3"/><path d="M8 7l1.5-3h5L16 7"/></svg>Foto 4</div>
-        <img src="photo4.jpg" alt="Foto 4" onload="this.classList.add('loaded')" onerror="this.remove()">
-      </div>
-      <div class="gallery-item" onclick="openLightbox(4)">
-        <div class="gallery-ph"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="3" y="7" width="18" height="14" rx="1"/><circle cx="12" cy="14" r="3"/><path d="M8 7l1.5-3h5L16 7"/></svg>Foto 5</div>
-        <img src="photo5.jpg" alt="Foto 5" onload="this.classList.add('loaded')" onerror="this.remove()">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="event.stopPropagation();closeLightbox()">✕</button>
-  <img id="lightbox-img" src="" alt="">
 </div>
 
 <!-- ══════════════ EVENTS ══════════════ -->
@@ -847,13 +812,13 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   </p>
   <div class="savedate-btns">
     <a class="savedate-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Haqimi+%26+Nabilah&dates=20260831T040000Z%2F20260831T090000Z&details=Walimatul+%27Urus+%E2%80%94+Haqimi+%26+Nabilah+%7C+qimibella.vercel.app&location=Balik+Bukit%2C+Melaka" target="_blank" rel="noopener">
-      🔵 Google Calendar
+      Google Calendar
     </a>
     <button class="savedate-btn" onclick="downloadICS()">
-      🍎 Apple Calendar
+      Apple Calendar
     </button>
     <button class="savedate-btn" onclick="downloadICS()">
-      ⬇️ Muat Turun (.ics)
+      Muat Turun (.ics)
     </button>
   </div>
 </div>
@@ -931,31 +896,6 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   </div>
 </div>
 
-<!-- ══════════════ SALAM DIGITAL ══════════════ -->
-<div class="salam-section reveal">
-  <div class="rsvp-inner">
-    <p class="section-eyebrow">Hadiah Digital</p>
-    <h2 class="section-title light">Salam Digital</h2>
-    <div class="divider"><span>✦</span></div>
-    <p style="text-align:center;font-family:'EB Garamond',serif;font-style:italic;font-size:16px;color:rgba(247,240,220,0.4);line-height:1.8;margin-bottom:0">
-      Bagi yang ingin memberi hadiah digital (Money Gift):
-    </p>
-    <div class="salam-card">
-      <div class="salam-bank">Bank Islam Malaysia</div>
-      <div class="salam-acc" id="bank-acc">1303-5020-7753-16</div>
-      <div class="salam-name">Muhammad Haqimi bin Harun</div>
-      <div class="salam-btns">
-        <button class="salam-btn" onclick="copyAcc(this)">📋 &nbsp;Salin No. Akaun</button>
-        <button class="salam-btn" onclick="toggleQR()">📱 &nbsp;Tunjuk QR Code</button>
-      </div>
-      <div class="salam-qr" id="salam-qr">
-        <img src="qr.jpeg" alt="DuitNow QR - Muhammad Haqimi">
-      </div>
-      <p class="salam-note">*Gantikan dengan butiran akaun &amp; QR Code sebenar</p>
-    </div>
-  </div>
-</div>
-
 <!-- ══════════════ HUBUNGI ══════════════ -->
 <div class="hubungi-section reveal">
   <p class="section-eyebrow">Pertanyaan Majlis</p>
@@ -973,6 +913,25 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Nabilah
     </a>
+  </div>
+</div>
+
+<!-- salam mini -->
+<div class="salam-mini">
+  <button class="salam-toggle-btn" onclick="toggleSalam(this)">— Hadiah Digital —</button>
+  <div class="salam-panel" id="salam-panel">
+    <div class="salam-inner">
+      <div class="salam-bank">Bank Islam Malaysia</div>
+      <div class="salam-acc">1303-5020-7753-16</div>
+      <div class="salam-name">Muhammad Haqimi bin Harun</div>
+      <div class="salam-btns">
+        <button class="salam-btn" onclick="copyAcc(this)">📋 &nbsp;Salin No. Akaun</button>
+        <button class="salam-btn" onclick="toggleQR()">📱 &nbsp;QR Code</button>
+      </div>
+      <div class="salam-qr" id="salam-qr">
+        <img src="qr.jpeg" alt="DuitNow QR">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -1012,11 +971,11 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 // ── Gold particles
 (function(){
   const wrap = document.getElementById('particles-wrap');
-  for(let i=0;i<14;i++){
+  for(let i=0;i<40;i++){
     const p=document.createElement('div');
     p.className='particle';
-    const size=2+Math.random()*4;
-    p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:${Math.random()*-20}px;animation-duration:${12+Math.random()*16}s;animation-delay:${Math.random()*10}s;`;
+    const size=2+Math.random()*6;
+    p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:${Math.random()*-20}px;animation-duration:${8+Math.random()*14}s;animation-delay:${Math.random()*12}s;`;
     wrap.appendChild(p);
   }
 })();
@@ -1156,6 +1115,11 @@ function copyAcc(btn){
     .then(()=>{btn.innerHTML='✓ &nbsp;Disalin!';setTimeout(()=>{btn.innerHTML='📋 &nbsp;Salin No. Akaun'},2000)});
 }
 function toggleQR(){document.getElementById('salam-qr').classList.toggle('show')}
+function toggleSalam(btn){
+  const panel=document.getElementById('salam-panel');
+  panel.classList.toggle('open');
+  btn.textContent=panel.classList.contains('open')?'— Tutup —':'— Hadiah Digital —';
+}
 </script>
 </body>
 </html>
