@@ -9,7 +9,7 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   --maroon:#6B0F1A;
-  --maroon-deep:#4A0A12;
+  --maroon-deep:#5E1020;
   --maroon-mid:#8B1A27;
   --maroon-light:#C4435A;
   --gold:#C9A84C;
@@ -60,7 +60,9 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .hero::after{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at center,rgba(107,15,26,0) 0%,rgba(74,10,18,0.8) 100%);
+  background:
+    radial-gradient(ellipse 60% 50% at center,rgba(201,168,76,0.07) 0%,transparent 70%),
+    radial-gradient(ellipse at center,rgba(107,15,26,0) 0%,rgba(74,10,18,0.45) 100%);
   pointer-events:none;
 }
 
@@ -577,6 +579,26 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   .footer-contacts { line-height: 2.4; }
 }
 
+/* ── SIDE FLORALS (fixed, full page) ── */
+.side-floral{position:fixed;top:50%;transform:translateY(-50%);pointer-events:none;z-index:0;opacity:0.38;}
+.side-floral-l{left:-18px;width:90px;height:340px;}
+.side-floral-r{right:-18px;width:90px;height:340px;transform:translateY(-50%) scaleX(-1);}
+@media(max-width:768px){.side-floral{display:none}}
+
+/* ── FOOTER FLORALS ── */
+.footer-floral{position:absolute;pointer-events:none;z-index:0;}
+.footer-floral-tl{top:-10px;left:-10px;width:150px;height:165px;opacity:0.5;}
+.footer-floral-br{bottom:-10px;right:-10px;width:120px;height:135px;opacity:0.4;transform:rotate(180deg);}
+
+/* ── HERO FLORALS ── */
+.hero-floral{position:absolute;pointer-events:none;z-index:1;}
+.hero-floral-tr{top:-10px;right:-10px;width:210px;height:230px;opacity:0.85;}
+.hero-floral-bl{bottom:-10px;left:-10px;width:160px;height:175px;opacity:0.7;transform:rotate(180deg);}
+@media(max-width:480px){
+  .hero-floral-tr{width:150px;height:165px;}
+  .hero-floral-bl{width:110px;height:120px;}
+}
+
 @media(max-width:360px){
   .hero { padding: 60px 16px 70px; }
   .section, .section-full { padding: 48px 16px; }
@@ -660,8 +682,242 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 <!-- Particles -->
 <div id="particles-wrap"></div>
 
+<!-- Side florals -->
+<div class="side-floral side-floral-l">
+  <svg viewBox="0 0 90 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M55 10 C52 60 50 110 48 160 C46 210 44 260 42 330" stroke="rgba(180,140,40,0.4)" stroke-width="1.5" fill="none"/>
+    <!-- top bud -->
+    <g transform="translate(55,18)">
+      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(201,168,76,0.55)"/>
+      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(226,201,126,0.45)"/>
+      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(226,201,126,0.45)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" fill="rgba(247,240,220,0.5)"/>
+    </g>
+    <!-- leaf 1 -->
+    <path d="M52 70 C35 62 28 50 34 44 C42 52 48 62 52 70Z" fill="rgba(140,108,28,0.3)"/>
+    <path d="M52 70 C65 60 68 46 60 43 C55 54 52 64 52 70Z" fill="rgba(140,108,28,0.24)"/>
+    <!-- small flower 1 -->
+    <g transform="translate(50,105)">
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(300)"/>
+      <circle r="5" fill="rgba(247,240,220,0.72)"/>
+      <circle r="3" fill="rgba(226,201,126,0.85)"/>
+    </g>
+    <!-- leaf 2 -->
+    <path d="M46 155 C30 148 24 135 30 129 C38 137 43 147 46 155Z" fill="rgba(140,108,28,0.28)"/>
+    <path d="M46 155 C58 146 60 132 53 129 C48 140 46 149 46 155Z" fill="rgba(140,108,28,0.22)"/>
+    <!-- main rose mid -->
+    <g transform="translate(48,205)">
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(22)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(82)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(142)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(202)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(262)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.58)" transform="rotate(15)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(87)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.58)" transform="rotate(159)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(231)"/>
+      <circle r="9" fill="rgba(247,240,220,0.65)"/>
+      <circle r="5" fill="rgba(226,201,126,0.85)"/>
+      <circle r="2.5" fill="rgba(247,240,220,0.9)"/>
+    </g>
+    <!-- leaf 3 -->
+    <path d="M43 258 C27 250 22 237 28 232 C36 240 40 250 43 258Z" fill="rgba(140,108,28,0.25)"/>
+    <!-- small flower bottom -->
+    <g transform="translate(44,295)">
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.32)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.32)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(288)"/>
+      <circle r="3" fill="rgba(247,240,220,0.65)"/>
+    </g>
+    <!-- dots -->
+    <circle cx="60" cy="45" r="2" fill="rgba(201,168,76,0.3)"/>
+    <circle cx="38" cy="130" r="1.8" fill="rgba(201,168,76,0.28)"/>
+    <circle cx="60" cy="175" r="1.5" fill="rgba(201,168,76,0.25)"/>
+    <circle cx="36" cy="240" r="1.8" fill="rgba(201,168,76,0.28)"/>
+    <circle cx="58" cy="318" r="1.5" fill="rgba(201,168,76,0.22)"/>
+  </svg>
+</div>
+<div class="side-floral side-floral-r">
+  <svg viewBox="0 0 90 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M55 10 C52 60 50 110 48 160 C46 210 44 260 42 330" stroke="rgba(180,140,40,0.4)" stroke-width="1.5" fill="none"/>
+    <g transform="translate(55,18)">
+      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(201,168,76,0.5)"/>
+      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(226,201,126,0.4)"/>
+      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(226,201,126,0.4)"/>
+      <ellipse cx="0" cy="-7" rx="3" ry="5" fill="rgba(247,240,220,0.45)"/>
+    </g>
+    <path d="M52 70 C35 62 28 50 34 44 C42 52 48 62 52 70Z" fill="rgba(140,108,28,0.26)"/>
+    <path d="M52 70 C65 60 68 46 60 43 C55 54 52 64 52 70Z" fill="rgba(140,108,28,0.2)"/>
+    <g transform="translate(50,110)">
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(300)"/>
+      <circle r="5" fill="rgba(247,240,220,0.65)"/>
+      <circle r="3" fill="rgba(226,201,126,0.8)"/>
+    </g>
+    <path d="M46 160 C30 153 24 140 30 134 C38 142 43 152 46 160Z" fill="rgba(140,108,28,0.24)"/>
+    <path d="M46 160 C58 151 60 137 53 134 C48 145 46 154 46 160Z" fill="rgba(140,108,28,0.18)"/>
+    <g transform="translate(48,210)">
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(22)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.36)" transform="rotate(82)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(142)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.36)" transform="rotate(202)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(262)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(15)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.46)" transform="rotate(87)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(159)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.46)" transform="rotate(231)"/>
+      <circle r="9" fill="rgba(247,240,220,0.58)"/>
+      <circle r="5" fill="rgba(226,201,126,0.78)"/>
+      <circle r="2.5" fill="rgba(247,240,220,0.85)"/>
+    </g>
+    <path d="M43 262 C27 254 22 241 28 236 C36 244 40 254 43 262Z" fill="rgba(140,108,28,0.22)"/>
+    <g transform="translate(44,298)">
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.28)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.28)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(288)"/>
+      <circle r="3" fill="rgba(247,240,220,0.6)"/>
+    </g>
+    <circle cx="60" cy="45" r="2" fill="rgba(201,168,76,0.26)"/>
+    <circle cx="38" cy="135" r="1.8" fill="rgba(201,168,76,0.24)"/>
+    <circle cx="58" cy="320" r="1.5" fill="rgba(201,168,76,0.2)"/>
+  </svg>
+</div>
+
 <!-- ══════════════ HERO ══════════════ -->
 <div class="hero">
+
+  <!-- floral top-right -->
+  <div class="hero-floral hero-floral-tr">
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- stem -->
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(180,140,40,0.35)" stroke-width="1.5" fill="none"/>
+      <!-- leaf 1 -->
+      <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.32)"/>
+      <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.26)"/>
+      <!-- leaf 2 -->
+      <path d="M86 143 C68 128 62 112 70 106 C78 116 82 130 86 143Z" fill="rgba(140,108,28,0.28)"/>
+      <path d="M86 143 C100 130 103 112 96 108 C90 120 88 132 86 143Z" fill="rgba(140,108,28,0.22)"/>
+      <!-- small bud top-right -->
+      <g transform="translate(178,28)">
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.55)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.45)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.45)"/>
+        <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.5)"/>
+        <path d="M0 0 C1 7 3 14 6 22" stroke="rgba(180,140,40,0.3)" stroke-width="1" fill="none"/>
+      </g>
+      <!-- small flower right-mid -->
+      <g transform="translate(170,82)">
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(300)"/>
+        <circle r="4" fill="rgba(247,240,220,0.72)"/>
+      </g>
+      <!-- main rose -->
+      <g transform="translate(93,88)">
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(255)"/>
+        <circle r="12" fill="rgba(247,240,220,0.68)"/>
+        <circle r="7" fill="rgba(226,201,126,0.88)"/>
+        <circle r="4" fill="rgba(247,240,220,0.92)"/>
+        <circle r="2" fill="rgba(201,168,76,1)"/>
+      </g>
+      <!-- dots -->
+      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.35)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.28)"/>
+      <circle cx="72" cy="58" r="2" fill="rgba(201,168,76,0.22)"/>
+      <circle cx="188" cy="112" r="2" fill="rgba(201,168,76,0.3)"/>
+    </svg>
+  </div>
+
+  <!-- floral bottom-left (same SVG, rotated 180° via CSS) -->
+  <div class="hero-floral hero-floral-bl">
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(180,140,40,0.3)" stroke-width="1.5" fill="none"/>
+      <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.28)"/>
+      <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.22)"/>
+      <g transform="translate(178,28)">
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.45)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.38)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.38)"/>
+        <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.45)"/>
+      </g>
+      <g transform="translate(93,88)">
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.45)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.45)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(255)"/>
+        <circle r="12" fill="rgba(247,240,220,0.55)"/>
+        <circle r="7" fill="rgba(226,201,126,0.72)"/>
+        <circle r="4" fill="rgba(247,240,220,0.8)"/>
+        <circle r="2" fill="rgba(201,168,76,0.9)"/>
+      </g>
+    </svg>
+  </div>
+
   <div class="hero-ring"></div>
   <div class="hero-ring-2"></div>
   <div class="hero-content">
@@ -923,6 +1179,105 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ FOOTER ══════════════ -->
 <div class="footer reveal">
+
+  <!-- floral top-left -->
+  <div class="footer-floral footer-floral-tl">
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" fill="none"/>
+      <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.32)"/>
+      <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.26)"/>
+      <path d="M86 143 C68 128 62 112 70 106 C78 116 82 130 86 143Z" fill="rgba(140,108,28,0.28)"/>
+      <path d="M86 143 C100 130 103 112 96 108 C90 120 88 132 86 143Z" fill="rgba(140,108,28,0.22)"/>
+      <g transform="translate(178,28)">
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.5)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.4)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.4)"/>
+        <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.45)"/>
+        <path d="M0 0 C1 7 3 14 6 22" stroke="rgba(201,168,76,0.28)" stroke-width="1" fill="none"/>
+      </g>
+      <g transform="translate(170,82)">
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(300)"/>
+        <circle r="4" fill="rgba(247,240,220,0.65)"/>
+      </g>
+      <g transform="translate(93,88)">
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(255)"/>
+        <circle r="12" fill="rgba(247,240,220,0.6)"/>
+        <circle r="7" fill="rgba(226,201,126,0.8)"/>
+        <circle r="4" fill="rgba(247,240,220,0.88)"/>
+        <circle r="2" fill="rgba(201,168,76,1)"/>
+      </g>
+      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.3)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.24)"/>
+      <circle cx="72" cy="58" r="2" fill="rgba(201,168,76,0.2)"/>
+      <circle cx="188" cy="112" r="2" fill="rgba(201,168,76,0.28)"/>
+    </svg>
+  </div>
+
+  <!-- floral bottom-right (rotated 180° via CSS) -->
+  <div class="footer-floral footer-floral-br">
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(201,168,76,0.28)" stroke-width="1.5" fill="none"/>
+      <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.28)"/>
+      <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.22)"/>
+      <g transform="translate(178,28)">
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.42)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.35)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.35)"/>
+        <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.4)"/>
+      </g>
+      <g transform="translate(93,88)">
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.44)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.44)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(255)"/>
+        <circle r="12" fill="rgba(247,240,220,0.55)"/>
+        <circle r="7" fill="rgba(226,201,126,0.72)"/>
+        <circle r="4" fill="rgba(247,240,220,0.82)"/>
+        <circle r="2" fill="rgba(201,168,76,0.9)"/>
+      </g>
+      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.26)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.2)"/>
+    </svg>
+  </div>
+
   <div class="footer-content">
     <svg class="footer-ornament" width="70" height="70" viewBox="0 0 70 70" fill="none">
       <circle cx="35" cy="35" r="32" stroke="#C9A84C" stroke-width="0.6"/>
@@ -957,7 +1312,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 // ── Gold particles
 (function(){
   const wrap = document.getElementById('particles-wrap');
-  for(let i=0;i<40;i++){
+  for(let i=0;i<28;i++){
     const p=document.createElement('div');
     p.className='particle';
     const size=2+Math.random()*6;
