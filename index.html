@@ -808,17 +808,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <h2 class="section-title">Doa &amp; Ucapan</h2>
     <div class="divider"><span>✦</span></div>
     <div class="wishes-grid" id="wishes-list">
-      <div class="wish-card">
-        <div class="wish-text">"Semoga perkahwinan ini diberkati Allah dan dipenuhi kasih sayang yang abadi. Selamat pengantin baru!"</div>
-        <div class="wish-meta"><strong>Encik Ridzuan &amp; Keluarga</strong> &nbsp;·&nbsp; Kuala Lumpur</div>
-      </div>
-      <div class="wish-card">
-        <div class="wish-text">"Barakallahu lakuma wa baraka 'alaykuma wa jama'a baynakuma fi khair. Tahniah buat Haqimi &amp; Nabilah!"</div>
-        <div class="wish-meta"><strong>Ustaz Fadzil</strong> &nbsp;·&nbsp; Selangor</div>
-      </div>
-      <div class="wish-card">
-        <div class="wish-text">"#BellaFoundHerQimistry — Sungguh indah jodoh yang Allah aturkan. Semoga kekal bahagia dunia akhirat."</div>
-        <div class="wish-meta"><strong>Rakan-rakan Universiti</strong> &nbsp;·&nbsp; Malaysia</div>
+      <div id="wishes-loading" style="text-align:center;padding:32px;color:var(--muted);font-family:'EB Garamond',serif;font-style:italic;font-size:16px;">
+        Memuatkan ucapan...
       </div>
     </div>
   </div>
@@ -905,6 +896,35 @@ document.getElementById('music-btn').addEventListener('click',()=>{
   else{audio.volume=0.25;audio.play().catch(()=>{});playing=true;}
 });
 
+// ── Load Wishes from Google Sheet
+function loadWishes(){
+  const list = document.getElementById('wishes-list');
+  fetch(SHEET_URL)
+    .then(r => r.json())
+    .then(wishes => {
+      if(!wishes.length){
+        list.innerHTML = '<div style="text-align:center;padding:32px;color:var(--muted);font-family:\'EB Garamond\',serif;font-style:italic;font-size:16px;">Jadilah yang pertama mengucapkan tahniah! 💛</div>';
+        return;
+      }
+      list.innerHTML = wishes.reverse().map(w => `
+        <div class="wish-card" style="opacity:0;transform:translateY(16px);transition:all 0.6s">
+          <div class="wish-text">"${w.ucapan}"</div>
+          <div class="wish-meta"><strong>${w.nama}</strong></div>
+        </div>
+      `).join('');
+      // animate in
+      setTimeout(()=>{
+        list.querySelectorAll('.wish-card').forEach((c,i)=>{
+          setTimeout(()=>{ c.style.opacity='1'; c.style.transform='none'; }, i*80);
+        });
+      }, 50);
+    })
+    .catch(()=>{
+      list.innerHTML = '<div style="text-align:center;padding:32px;color:var(--muted);font-family:\'EB Garamond\',serif;font-style:italic;font-size:16px;">Ucapan tidak dapat dimuatkan.</div>';
+    });
+}
+loadWishes();
+
 // ── RSVP
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyv1hrKWWezd0lIqOJwIEmYpF4KbQsJahtEfXNmzjTf7ZFnyKdj9lk3zALYhv0WWvbe/exec';
 
@@ -934,19 +954,11 @@ function submitRSVP(){
     body: JSON.stringify(payload)
   })
   .then(() => {
-    // no-cors means we can't read response, assume success
-    if(wish){
-      const list = document.getElementById('wishes-list');
-      const card = document.createElement('div');
-      card.className = 'wish-card';
-      card.style.cssText = 'opacity:0;transform:translateY(16px);transition:all 0.6s';
-      card.innerHTML = `<div class="wish-text">"${wish}"</div><div class="wish-meta"><strong>${name}</strong> &nbsp;·&nbsp; Baru sahaja</div>`;
-      list.insertBefore(card, list.firstChild);
-      setTimeout(()=>{ card.style.opacity='1'; card.style.transform='none'; }, 50);
-    }
     document.getElementById('form-body').style.display = 'none';
     document.getElementById('success-name').textContent = name.split(' ')[0];
     document.getElementById('rsvp-success').style.display = 'block';
+    // reload wishes from sheet after short delay
+    setTimeout(loadWishes, 1500);
   })
   .catch(() => {
     btn.textContent = 'Hantar Pengesahan';
