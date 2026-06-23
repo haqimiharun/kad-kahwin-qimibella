@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kad Kahwin — Haqimi & Nabilah 2026</title>
+<title>Kad Kahwin — Nabilah & Haqimi 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --maroon:#6B0F1A;
-  --maroon-deep:#5E1020;
-  --maroon-mid:#8B1A27;
-  --maroon-light:#C4435A;
-  --gold:#C9A84C;
-  --gold-light:#E2C97E;
-  --gold-pale:#F7F0DC;
-  --white:#FDFAF5;
-  --cream:#F5EDD8;
-  --text:#2A0A0E;
-  --muted:#7A4A50;
-  --border:rgba(201,168,76,0.3);
+  --maroon:#4A6B88;
+  --maroon-deep:#38576E;
+  --maroon-mid:#6B8FA8;
+  --maroon-light:#8BAFC4;
+  --gold:#6AA0AA;
+  --gold-light:#90C0C8;
+  --gold-pale:#E8F4F6;
+  --white:#F8FCFD;
+  --cream:#D0E8ED;
+  --text:#2D4A62;
+  --muted:#6B8FA8;
+  --border:rgba(74,107,136,0.25);
 }
 html{scroll-behavior:smooth}
 body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;overflow-x:hidden;cursor:default}
@@ -35,7 +35,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   width:42px;height:42px;border-radius:50%;
   background:var(--maroon);border:1px solid var(--gold);
   cursor:pointer;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 20px rgba(107,15,26,0.4);
+  box-shadow:0 4px 20px rgba(58,86,110,0.4);
   transition:all 0.3s;
 }
 #music-btn:hover{transform:scale(1.1);background:var(--gold)}
@@ -45,7 +45,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 /* ── HERO ── */
 .hero{
   min-height:100vh;
-  background:linear-gradient(160deg,#FDF8F0 0%,#F5EDD8 60%,#F0E5C8 100%);
+  background:linear-gradient(160deg,#D8EEF3 0%,#C6E3EA 55%,#B8D8E0 100%);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;padding:80px 24px;
   position:relative;overflow:hidden;
@@ -55,25 +55,25 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .hero::before{
   content:'';position:absolute;inset:0;
   background-image:
-    repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(107,15,26,0.03) 30px,rgba(107,15,26,0.03) 31px),
-    repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(107,15,26,0.03) 30px,rgba(107,15,26,0.03) 31px);
+    repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(58,86,110,0.03) 30px,rgba(58,86,110,0.03) 31px),
+    repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(58,86,110,0.03) 30px,rgba(58,86,110,0.03) 31px);
 }
 .hero::after{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 70% 55% at center,rgba(201,168,76,0.13) 0%,transparent 65%);
+  background:radial-gradient(ellipse 70% 55% at center,rgba(91,127,168,0.13) 0%,transparent 65%);
   pointer-events:none;
 }
 
 /* ornamental circle behind names */
 .hero-ring{
   position:absolute;width:380px;height:380px;border-radius:50%;
-  border:1px solid rgba(201,168,76,0.3);
+  border:1px solid rgba(91,127,168,0.3);
   top:50%;left:50%;transform:translate(-50%,-50%);
   animation:ringPulse 4s ease-in-out infinite;
 }
 .hero-ring-2{
   position:absolute;width:300px;height:300px;border-radius:50%;
-  border:1px solid rgba(201,168,76,0.2);
+  border:1px solid rgba(91,127,168,0.2);
   top:50%;left:50%;transform:translate(-50%,-50%);
   animation:ringPulse 4s ease-in-out infinite reverse;
 }
@@ -93,7 +93,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .hero-invite{
   font-family:'Montserrat',sans-serif;font-weight:200;
   font-size:11px;letter-spacing:0.4em;text-transform:uppercase;
-  color:rgba(107,15,26,0.45);margin-bottom:36px;
+  color:rgba(58,86,110,0.45);margin-bottom:36px;
   opacity:0;animation:fadeUp 1s 0.6s forwards;
 }
 .hero-line{
@@ -130,7 +130,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .hero-hashtags{
   font-family:'Montserrat',sans-serif;font-weight:300;
   font-size:10px;letter-spacing:0.15em;
-  color:rgba(107,15,26,0.3);margin-top:12px;
+  color:rgba(58,86,110,0.3);margin-top:12px;
   opacity:0;animation:fadeUp 1s 1.8s forwards;
 }
 
@@ -140,7 +140,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   display:flex;flex-direction:column;align-items:center;
   opacity:0;animation:fadeUp 1s 2s forwards;
 }
-.scroll-hint p{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(107,15,26,0.3)}
+.scroll-hint p{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(58,86,110,0.3)}
 .scroll-hint span{display:block;width:1px;height:44px;background:linear-gradient(180deg,var(--gold),transparent);margin:8px auto 0;animation:scrollDown 2s 2.5s infinite}
 @keyframes scrollDown{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1}100%{opacity:0;transform:scaleY(1);transform-origin:top}}
 
@@ -176,11 +176,11 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   background:var(--white);
   padding:52px 40px;text-align:center;
   position:relative;
-  border:1px solid rgba(201,168,76,0.25);
+  border:1px solid rgba(91,127,168,0.25);
 }
 .family-wrap::before,.family-wrap::after{
   content:'';position:absolute;
-  border:1px solid rgba(201,168,76,0.18);
+  border:1px solid rgba(91,127,168,0.18);
 }
 .family-wrap::before{inset:10px}
 .family-wrap::after{inset:16px}
@@ -198,12 +198,12 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   color:var(--gold);font-style:italic;font-size:16px;
 }
 .family-sep{
-  width:40px;height:1px;background:rgba(201,168,76,0.3);
+  width:40px;height:1px;background:rgba(91,127,168,0.3);
   margin:28px auto;
 }
 .family-invite-text{
   font-family:'EB Garamond',serif;font-style:italic;
-  font-size:16px;color:rgba(107,15,26,0.5);
+  font-size:16px;color:rgba(58,86,110,0.5);
   line-height:1.9;margin:28px 0;
 }
 
@@ -238,11 +238,11 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .event-card{
   background:var(--white);
   padding:44px 32px;text-align:center;
-  border:1px solid rgba(201,168,76,0.2);
+  border:1px solid rgba(91,127,168,0.2);
   position:relative;overflow:hidden;
   transition:background 0.3s;
 }
-.event-card:hover{background:rgba(201,168,76,0.06)}
+.event-card:hover{background:rgba(91,127,168,0.06)}
 .event-card::before{
   content:'';position:absolute;top:0;left:0;right:0;height:2px;
   background:linear-gradient(90deg,transparent,var(--gold),transparent);
@@ -266,14 +266,14 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   color:var(--muted);letter-spacing:0.05em;
   line-height:1.6;
 }
-.event-sep{width:30px;height:1px;background:rgba(201,168,76,0.25);margin:20px auto}
+.event-sep{width:30px;height:1px;background:rgba(91,127,168,0.25);margin:20px auto}
 
 .map-btns{display:flex;gap:8px;justify-content:center;margin-top:24px;flex-wrap:wrap}
 .map-btn{
   display:inline-flex;align-items:center;gap:6px;
   padding:8px 14px;font-family:'Montserrat',sans-serif;
   font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
-  text-decoration:none;border:1px solid rgba(107,15,26,0.25);
+  text-decoration:none;border:1px solid rgba(58,86,110,0.25);
   color:var(--maroon);transition:all 0.25s;
 }
 .map-btn:hover{background:var(--gold);color:var(--maroon-deep);border-color:var(--gold)}
@@ -287,12 +287,12 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .countdown-grid{
   display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;max-width:440px;margin:40px auto 0;
-  border:1px solid rgba(201,168,76,0.35);
+  border:1px solid rgba(91,127,168,0.35);
 }
 @media(max-width:380px){.countdown-grid{grid-template-columns:repeat(2,1fr)}}
 .count-cell{
   padding:28px 16px;
-  border-right:1px solid rgba(201,168,76,0.25);
+  border-right:1px solid rgba(91,127,168,0.25);
   position:relative;
 }
 .count-cell:last-child{border-right:none}
@@ -304,7 +304,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .count-label{
   font-family:'Montserrat',sans-serif;
   font-size:7px;letter-spacing:0.5em;text-transform:uppercase;
-  color:rgba(107,15,26,0.4);margin-top:6px;
+  color:rgba(58,86,110,0.4);margin-top:6px;
 }
 
 
@@ -314,14 +314,14 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .rsvp-inner{max-width:480px;margin:0 auto}
 .rsvp-card{
   background:var(--white);
-  border:1px solid rgba(201,168,76,0.25);
+  border:1px solid rgba(91,127,168,0.25);
   padding:44px 36px;
   position:relative;
 }
 .rsvp-card::before{
   content:'';position:absolute;
   top:8px;left:8px;right:8px;bottom:8px;
-  border:1px solid rgba(201,168,76,0.12);
+  border:1px solid rgba(91,127,168,0.12);
   pointer-events:none;
 }
 .form-group{margin-bottom:20px}
@@ -333,13 +333,13 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .form-input,.form-select,.form-textarea{
   width:100%;padding:12px 14px;
   background:var(--white);
-  border:1px solid rgba(201,168,76,0.25);
+  border:1px solid rgba(91,127,168,0.25);
   color:var(--text);
   font-family:'EB Garamond',serif;font-size:16px;
   outline:none;transition:border-color 0.2s;
   border-radius:0;-webkit-appearance:none;
 }
-.form-input::placeholder,.form-textarea::placeholder{color:rgba(107,15,26,0.25)}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(58,86,110,0.25)}
 .form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold)}
 .form-select option{background:var(--white);color:var(--text)}
 .form-textarea{resize:vertical;min-height:80px}
@@ -349,10 +349,10 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .attend-opt input{position:absolute;opacity:0;pointer-events:none}
 .attend-opt label{
   display:block;padding:11px;text-align:center;
-  border:1px solid rgba(201,168,76,0.25);cursor:pointer;
+  border:1px solid rgba(91,127,168,0.25);cursor:pointer;
   font-family:'Montserrat',sans-serif;font-size:10px;
   letter-spacing:0.2em;text-transform:uppercase;
-  color:rgba(107,15,26,0.4);transition:all 0.2s;
+  color:rgba(58,86,110,0.4);transition:all 0.2s;
 }
 .attend-opt input:checked+label{
   background:var(--gold);color:var(--maroon-deep);
@@ -412,7 +412,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .footer::before{
   content:'';position:absolute;inset:0;
-  background-image:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(201,168,76,0.02) 40px,rgba(201,168,76,0.02) 41px),repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(201,168,76,0.02) 40px,rgba(201,168,76,0.02) 41px);
+  background-image:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(91,127,168,0.02) 40px,rgba(91,127,168,0.02) 41px),repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(91,127,168,0.02) 40px,rgba(91,127,168,0.02) 41px);
 }
 .footer-content{position:relative;z-index:1;max-width:520px;margin:0 auto}
 .footer-ornament{margin-bottom:28px;opacity:0.5}
@@ -423,13 +423,13 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .footer-ayat{
   font-family:'EB Garamond',serif;font-style:italic;
-  font-size:16px;color:rgba(247,240,220,0.5);
+  font-size:16px;color:rgba(235,248,252,0.55);
   line-height:2;max-width:420px;margin:0 auto 32px;
 }
-.footer-sep{width:60px;height:1px;background:rgba(201,168,76,0.3);margin:32px auto}
+.footer-sep{width:60px;height:1px;background:rgba(91,127,168,0.3);margin:32px auto}
 .footer-contacts{
   font-family:'Montserrat',sans-serif;font-weight:300;
-  font-size:12px;color:rgba(247,240,220,0.4);
+  font-size:12px;color:rgba(235,248,252,0.45);
   line-height:2.2;
 }
 .footer-contacts a{color:var(--gold-light);text-decoration:none}
@@ -442,7 +442,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .footer-credit{
   margin-top:40px;font-family:'Montserrat',sans-serif;
   font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
-  color:rgba(247,240,220,0.15);
+  color:rgba(235,248,252,0.22);
 }
 
 /* ── ANIMATIONS ── */
@@ -556,11 +556,11 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   .countdown-grid { grid-template-columns: repeat(2,1fr); }
   .count-cell:nth-child(2) { border-right: none; }
   .count-cell:nth-child(3) {
-    border-top: 1px solid rgba(201,168,76,0.25);
-    border-right: 1px solid rgba(201,168,76,0.25);
+    border-top: 1px solid rgba(91,127,168,0.25);
+    border-right: 1px solid rgba(91,127,168,0.25);
   }
   .count-cell:nth-child(4) {
-    border-top: 1px solid rgba(201,168,76,0.25);
+    border-top: 1px solid rgba(91,127,168,0.25);
     border-right: none;
   }
   .count-num { font-size: 38px; }
@@ -616,7 +616,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .gallery-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 0.4s;z-index:1}
 .gallery-item img.loaded{opacity:1}
 .gallery-ph{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:var(--maroon-deep);color:rgba(247,240,220,0.25);font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase}
-.gallery-ph svg{width:26px;height:26px;stroke:rgba(201,168,76,0.25);fill:none}
+.gallery-ph svg{width:26px;height:26px;stroke:rgba(91,127,168,0.25);fill:none}
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:99999;align-items:center;justify-content:center}
 .lightbox.open{display:flex}
 .lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}
@@ -635,14 +635,14 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .salam-toggle-btn:hover{color:var(--maroon)}
 .salam-panel{max-height:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;opacity:0}
 .salam-panel.open{max-height:400px;opacity:1}
-.salam-inner{display:inline-block;margin-top:16px;background:var(--white);border:1px solid rgba(201,168,76,0.25);padding:20px 28px;text-align:center;min-width:260px}
+.salam-inner{display:inline-block;margin-top:16px;background:var(--white);border:1px solid rgba(91,127,168,0.25);padding:20px 28px;text-align:center;min-width:260px}
 .salam-bank{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 .salam-acc{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:4px}
 .salam-name{font-family:'EB Garamond',serif;font-style:italic;font-size:14px;color:var(--muted);margin-bottom:16px}
 .salam-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.salam-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;border:1px solid rgba(201,168,76,0.35);color:var(--maroon);transition:all 0.2s}
+.salam-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;border:1px solid rgba(91,127,168,0.35);color:var(--maroon);transition:all 0.2s}
 .salam-btn:hover{background:var(--gold);color:var(--maroon-deep);border-color:var(--gold)}
-.salam-qr{width:140px;height:140px;margin:16px auto 0;background:var(--white);display:none;align-items:center;justify-content:center;border:1px solid rgba(201,168,76,0.25)}
+.salam-qr{width:140px;height:140px;margin:16px auto 0;background:var(--white);display:none;align-items:center;justify-content:center;border:1px solid rgba(91,127,168,0.25)}
 .salam-qr.show{display:flex}
 .salam-qr img{width:120px;height:120px;object-fit:contain}
 
@@ -667,10 +667,40 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   .salam-btns{flex-direction:column}
 }
 
+/* ── FLORAL RECOLOR: hue-rotate turns blue petals → rose, brown leaves → teal ── */
+.side-floral svg,
+.hero-floral svg,
+.footer-floral svg{
+  filter:hue-rotate(130deg) saturate(2.4) brightness(1.12);
+}
+
+/* ── PARTICLES: rose pink petals ── */
+.particle{background:#D4889A !important}
+
+/* ── NH MONOGRAM ── */
+.hero-monogram{
+  position:relative;width:90px;height:90px;
+  margin:0 auto 24px;
+  opacity:0;animation:fadeUp 1s 0.7s forwards;
+}
+.hero-monogram span{
+  font-family:'Playfair Display',serif;
+  font-size:82px;font-style:italic;font-weight:400;
+  line-height:1;position:absolute;top:0;
+  color:var(--maroon-deep);
+}
+.hero-monogram .mono-n{left:0;opacity:0.6}
+.hero-monogram .mono-h{left:34px;top:8px;opacity:0.35}
+@media(max-width:480px){
+  .hero-monogram{width:70px;height:70px}
+  .hero-monogram span{font-size:64px}
+  .hero-monogram .mono-h{left:26px;top:6px}
+}
+
 /* ── ENVELOPE OVERLAY ── */
 #env-overlay{
   position:fixed;inset:0;z-index:999999;
-  background:linear-gradient(150deg,#FDF8F0 0%,#F5EDD8 55%,#EEE0C0 100%);
+  background:linear-gradient(150deg,#D8EEF3 0%,#C6E3EA 55%,#B8D8E0 100%);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   cursor:pointer;
   transition:opacity 0.9s ease,visibility 0.9s ease;
@@ -680,7 +710,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .env-top-text{
   font-family:'Montserrat',sans-serif;
   font-size:8px;letter-spacing:0.6em;text-transform:uppercase;
-  color:rgba(107,15,26,0.38);margin-bottom:48px;
+  color:rgba(56,87,110,0.5);margin-bottom:48px;
   animation:hintPulse 3s ease-in-out infinite;
 }
 
@@ -690,26 +720,26 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 /* Envelope body */
 .env-body{
   width:100%;height:210px;
-  background:var(--white);
-  border:1px solid rgba(201,168,76,0.35);
+  background:#F0F9FA;
+  border:1px solid rgba(91,127,168,0.3);
   position:relative;overflow:visible;
-  box-shadow:0 10px 50px rgba(107,15,26,0.1),0 2px 8px rgba(201,168,76,0.15);
+  box-shadow:0 10px 50px rgba(56,87,110,0.12),0 2px 8px rgba(91,127,168,0.1);
 }
 /* Bottom V decoration */
 .env-body::after{
   content:'';position:absolute;
   bottom:0;left:0;right:0;height:50%;
-  background:linear-gradient(to bottom right,var(--gold-pale) 50%,var(--cream) 50%);
+  background:linear-gradient(to bottom right,#D8EEF3 50%,#C6E3EA 50%);
   clip-path:polygon(0 100%,50% 0,100% 100%);
-  opacity:0.6;
+  opacity:0.65;
 }
 /* Side fold lines */
 .env-body::before{
   content:'';position:absolute;
   top:0;left:0;right:0;height:50%;
   background:
-    linear-gradient(to bottom right,transparent 49.5%,rgba(201,168,76,0.18) 50%,transparent 50.5%),
-    linear-gradient(to bottom left,transparent 49.5%,rgba(201,168,76,0.18) 50%,transparent 50.5%);
+    linear-gradient(to bottom right,transparent 49.5%,rgba(91,127,168,0.15) 50%,transparent 50.5%),
+    linear-gradient(to bottom left,transparent 49.5%,rgba(91,127,168,0.15) 50%,transparent 50.5%);
 }
 
 /* Flap */
@@ -723,8 +753,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 }
 .env-flap{
   width:100%;height:100%;
-  background:linear-gradient(160deg,#F7F0DC 0%,#EEE0C0 100%);
-  border:1px solid rgba(201,168,76,0.35);
+  background:linear-gradient(160deg,#C6E3EA 0%,#B4D4DC 100%);
+  border:1px solid rgba(91,127,168,0.3);
   clip-path:polygon(0 0,100% 0,50% 100%);
   transform-origin:top center;
   transform:rotateX(0deg);
@@ -741,15 +771,15 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   transform:translateX(-50%);
   width:76%;height:168px;
   background:var(--white);
-  border:1px solid rgba(201,168,76,0.3);
+  border:1px solid rgba(91,127,168,0.3);
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
   transition:transform 0.85s cubic-bezier(0.2,0,0.1,1);
   transition-delay:0.55s;
   z-index:5;
-  box-shadow:0 -4px 20px rgba(201,168,76,0.1);
+  box-shadow:0 -4px 20px rgba(91,127,168,0.1);
 }
 .env-inner-card.slide-up{transform:translateX(-50%) translateY(-185px)}
-.env-card-line{width:40px;height:1px;background:rgba(201,168,76,0.4);margin:4px 0}
+.env-card-line{width:40px;height:1px;background:rgba(91,127,168,0.4);margin:4px 0}
 .env-card-names{
   font-family:'Great Vibes',cursive;
   font-size:30px;color:var(--maroon-deep);
@@ -763,7 +793,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .env-card-date{
   font-family:'Montserrat',sans-serif;font-size:7px;
   letter-spacing:0.35em;text-transform:uppercase;
-  color:rgba(107,15,26,0.35);
+  color:rgba(56,87,110,0.4);
 }
 
 /* Wax seal */
@@ -771,22 +801,22 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   position:absolute;bottom:-22px;left:50%;
   transform:translateX(-50%);
   width:46px;height:46px;border-radius:50%;
-  background:var(--maroon);
-  border:2px solid rgba(201,168,76,0.55);
+  background:var(--maroon-deep);
+  border:2px solid rgba(144,192,200,0.6);
   display:flex;align-items:center;justify-content:center;
   z-index:20;
-  box-shadow:0 3px 16px rgba(107,15,26,0.3);
+  box-shadow:0 3px 16px rgba(58,86,110,0.3);
   transition:transform 0.2s;
 }
 .env-seal:hover{transform:translateX(-50%) scale(1.08)}
-.env-seal svg{width:18px;height:18px;fill:rgba(201,168,76,0.85)}
+.env-seal svg{width:18px;height:18px;fill:rgba(91,127,168,0.85)}
 
 /* Click hint */
 .env-click-hint{
   margin-top:52px;
   font-family:'Montserrat',sans-serif;
   font-size:8px;letter-spacing:0.45em;text-transform:uppercase;
-  color:rgba(107,15,26,0.38);
+  color:rgba(58,86,110,0.38);
   animation:hintPulse 2s ease-in-out infinite;
 }
 @keyframes hintPulse{
@@ -811,7 +841,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       <div class="env-inner-card" id="env-inner-card">
         <div class="env-card-line"></div>
         <div class="env-card-names">
-          Haqimi<span class="env-card-amp"> &amp; </span>Nabilah
+          Nabilah<span class="env-card-amp"> &amp; </span>Haqimi
         </div>
         <div class="env-card-line"></div>
         <div class="env-card-date">31 · 08 · 2026</div>
@@ -842,9 +872,9 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <path d="M55 10 C52 60 50 110 48 160 C46 210 44 260 42 330" stroke="rgba(180,140,40,0.4)" stroke-width="1.5" fill="none"/>
     <!-- top bud -->
     <g transform="translate(55,18)">
-      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(201,168,76,0.55)"/>
-      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(226,201,126,0.45)"/>
-      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(226,201,126,0.45)"/>
+      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(91,127,168,0.55)"/>
+      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(160,185,205,0.45)"/>
+      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(160,185,205,0.45)"/>
       <ellipse cx="0" cy="-7" rx="3" ry="5" fill="rgba(247,240,220,0.5)"/>
     </g>
     <!-- leaf 1 -->
@@ -852,117 +882,117 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <path d="M52 70 C65 60 68 46 60 43 C55 54 52 64 52 70Z" fill="rgba(140,108,28,0.24)"/>
     <!-- small flower 1 -->
     <g transform="translate(50,105)">
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(60)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(120)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(180)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.4)" transform="rotate(240)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.35)" transform="rotate(300)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(300)"/>
       <circle r="5" fill="rgba(247,240,220,0.72)"/>
-      <circle r="3" fill="rgba(226,201,126,0.85)"/>
+      <circle r="3" fill="rgba(160,185,205,0.85)"/>
     </g>
     <!-- leaf 2 -->
     <path d="M46 155 C30 148 24 135 30 129 C38 137 43 147 46 155Z" fill="rgba(140,108,28,0.28)"/>
     <path d="M46 155 C58 146 60 132 53 129 C48 140 46 149 46 155Z" fill="rgba(140,108,28,0.22)"/>
     <!-- main rose mid -->
     <g transform="translate(48,205)">
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(45)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(90)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(135)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(225)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.3)" transform="rotate(270)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(315)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(22)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(82)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(142)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(202)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.44)" transform="rotate(262)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.58)" transform="rotate(15)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(87)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.58)" transform="rotate(159)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(231)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.44)" transform="rotate(22)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(82)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.44)" transform="rotate(142)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(202)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.44)" transform="rotate(262)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.58)" transform="rotate(15)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.52)" transform="rotate(87)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.58)" transform="rotate(159)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.52)" transform="rotate(231)"/>
       <circle r="9" fill="rgba(247,240,220,0.65)"/>
-      <circle r="5" fill="rgba(226,201,126,0.85)"/>
+      <circle r="5" fill="rgba(160,185,205,0.85)"/>
       <circle r="2.5" fill="rgba(247,240,220,0.9)"/>
     </g>
     <!-- leaf 3 -->
     <path d="M43 258 C27 250 22 237 28 232 C36 240 40 250 43 258Z" fill="rgba(140,108,28,0.25)"/>
     <!-- small flower bottom -->
     <g transform="translate(44,295)">
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.32)" transform="rotate(72)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(144)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.32)" transform="rotate(216)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.38)" transform="rotate(288)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.32)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.32)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(288)"/>
       <circle r="3" fill="rgba(247,240,220,0.65)"/>
     </g>
     <!-- dots -->
-    <circle cx="60" cy="45" r="2" fill="rgba(201,168,76,0.3)"/>
-    <circle cx="38" cy="130" r="1.8" fill="rgba(201,168,76,0.28)"/>
-    <circle cx="60" cy="175" r="1.5" fill="rgba(201,168,76,0.25)"/>
-    <circle cx="36" cy="240" r="1.8" fill="rgba(201,168,76,0.28)"/>
-    <circle cx="58" cy="318" r="1.5" fill="rgba(201,168,76,0.22)"/>
+    <circle cx="60" cy="45" r="2" fill="rgba(91,127,168,0.3)"/>
+    <circle cx="38" cy="130" r="1.8" fill="rgba(91,127,168,0.28)"/>
+    <circle cx="60" cy="175" r="1.5" fill="rgba(91,127,168,0.25)"/>
+    <circle cx="36" cy="240" r="1.8" fill="rgba(91,127,168,0.28)"/>
+    <circle cx="58" cy="318" r="1.5" fill="rgba(91,127,168,0.22)"/>
   </svg>
 </div>
 <div class="side-floral side-floral-r">
   <svg viewBox="0 0 90 340" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M55 10 C52 60 50 110 48 160 C46 210 44 260 42 330" stroke="rgba(180,140,40,0.4)" stroke-width="1.5" fill="none"/>
     <g transform="translate(55,18)">
-      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(201,168,76,0.5)"/>
-      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(226,201,126,0.4)"/>
-      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(226,201,126,0.4)"/>
+      <path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(91,127,168,0.5)"/>
+      <path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(160,185,205,0.4)"/>
+      <path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(160,185,205,0.4)"/>
       <ellipse cx="0" cy="-7" rx="3" ry="5" fill="rgba(247,240,220,0.45)"/>
     </g>
     <path d="M52 70 C35 62 28 50 34 44 C42 52 48 62 52 70Z" fill="rgba(140,108,28,0.26)"/>
     <path d="M52 70 C65 60 68 46 60 43 C55 54 52 64 52 70Z" fill="rgba(140,108,28,0.2)"/>
     <g transform="translate(50,110)">
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(60)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(120)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.36)" transform="rotate(240)"/>
-      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(201,168,76,0.3)" transform="rotate(300)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.36)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.3)" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.36)" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.3)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.36)" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.3)" transform="rotate(300)"/>
       <circle r="5" fill="rgba(247,240,220,0.65)"/>
-      <circle r="3" fill="rgba(226,201,126,0.8)"/>
+      <circle r="3" fill="rgba(160,185,205,0.8)"/>
     </g>
     <path d="M46 160 C30 153 24 140 30 134 C38 142 43 152 46 160Z" fill="rgba(140,108,28,0.24)"/>
     <path d="M46 160 C58 151 60 137 53 134 C48 145 46 154 46 160Z" fill="rgba(140,108,28,0.18)"/>
     <g transform="translate(48,210)">
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(45)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(90)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(135)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(180)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(225)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.26)" transform="rotate(270)"/>
-      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(201,168,76,0.22)" transform="rotate(315)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(22)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.36)" transform="rotate(82)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(142)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.36)" transform="rotate(202)"/>
-      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(201,168,76,0.4)" transform="rotate(262)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(15)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.46)" transform="rotate(87)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.52)" transform="rotate(159)"/>
-      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(226,201,126,0.46)" transform="rotate(231)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.22)" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.22)" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.22)" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.22)" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(22)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.36)" transform="rotate(82)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(142)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.36)" transform="rotate(202)"/>
+      <ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(262)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.52)" transform="rotate(15)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.46)" transform="rotate(87)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.52)" transform="rotate(159)"/>
+      <ellipse cx="0" cy="-11" rx="6" ry="10" fill="rgba(160,185,205,0.46)" transform="rotate(231)"/>
       <circle r="9" fill="rgba(247,240,220,0.58)"/>
-      <circle r="5" fill="rgba(226,201,126,0.78)"/>
+      <circle r="5" fill="rgba(160,185,205,0.78)"/>
       <circle r="2.5" fill="rgba(247,240,220,0.85)"/>
     </g>
     <path d="M43 262 C27 254 22 241 28 236 C36 244 40 254 43 262Z" fill="rgba(140,108,28,0.22)"/>
     <g transform="translate(44,298)">
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(0)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.28)" transform="rotate(72)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(144)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.28)" transform="rotate(216)"/>
-      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(201,168,76,0.34)" transform="rotate(288)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.34)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.28)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.34)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.28)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.34)" transform="rotate(288)"/>
       <circle r="3" fill="rgba(247,240,220,0.6)"/>
     </g>
-    <circle cx="60" cy="45" r="2" fill="rgba(201,168,76,0.26)"/>
-    <circle cx="38" cy="135" r="1.8" fill="rgba(201,168,76,0.24)"/>
-    <circle cx="58" cy="320" r="1.5" fill="rgba(201,168,76,0.2)"/>
+    <circle cx="60" cy="45" r="2" fill="rgba(91,127,168,0.26)"/>
+    <circle cx="38" cy="135" r="1.8" fill="rgba(91,127,168,0.24)"/>
+    <circle cx="58" cy="320" r="1.5" fill="rgba(91,127,168,0.2)"/>
   </svg>
 </div>
 
@@ -982,53 +1012,53 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       <path d="M86 143 C100 130 103 112 96 108 C90 120 88 132 86 143Z" fill="rgba(140,108,28,0.22)"/>
       <!-- small bud top-right -->
       <g transform="translate(178,28)">
-        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.55)"/>
-        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.45)"/>
-        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.45)"/>
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(91,127,168,0.55)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(160,185,205,0.45)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(160,185,205,0.45)"/>
         <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.5)"/>
         <path d="M0 0 C1 7 3 14 6 22" stroke="rgba(180,140,40,0.3)" stroke-width="1" fill="none"/>
       </g>
       <!-- small flower right-mid -->
       <g transform="translate(170,82)">
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(60)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(120)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.42)" transform="rotate(240)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.36)" transform="rotate(300)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.42)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.36)" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.42)" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.36)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.42)" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.36)" transform="rotate(300)"/>
         <circle r="4" fill="rgba(247,240,220,0.72)"/>
       </g>
       <!-- main rose -->
       <g transform="translate(93,88)">
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(45)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(225)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.3)" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.26)" transform="rotate(315)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(22)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(67)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(112)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(157)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.46)" transform="rotate(202)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(247)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(15)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(75)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(195)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.6)" transform="rotate(255)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.3)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.26)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.3)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.26)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.3)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.26)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.3)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.26)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.46)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.46)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.46)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.6)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.55)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.6)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.55)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.6)" transform="rotate(255)"/>
         <circle r="12" fill="rgba(247,240,220,0.68)"/>
-        <circle r="7" fill="rgba(226,201,126,0.88)"/>
+        <circle r="7" fill="rgba(160,185,205,0.88)"/>
         <circle r="4" fill="rgba(247,240,220,0.92)"/>
-        <circle r="2" fill="rgba(201,168,76,1)"/>
+        <circle r="2" fill="rgba(91,127,168,1)"/>
       </g>
       <!-- dots -->
-      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.35)"/>
-      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.28)"/>
-      <circle cx="72" cy="58" r="2" fill="rgba(201,168,76,0.22)"/>
-      <circle cx="188" cy="112" r="2" fill="rgba(201,168,76,0.3)"/>
+      <circle cx="150" cy="142" r="3" fill="rgba(91,127,168,0.35)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(91,127,168,0.28)"/>
+      <circle cx="72" cy="58" r="2" fill="rgba(91,127,168,0.22)"/>
+      <circle cx="188" cy="112" r="2" fill="rgba(91,127,168,0.3)"/>
     </svg>
   </div>
 
@@ -1039,35 +1069,35 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.28)"/>
       <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.22)"/>
       <g transform="translate(178,28)">
-        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.45)"/>
-        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.38)"/>
-        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.38)"/>
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(91,127,168,0.45)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(160,185,205,0.38)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(160,185,205,0.38)"/>
         <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.45)"/>
       </g>
       <g transform="translate(93,88)">
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(45)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(225)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(315)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(22)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(67)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(112)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(157)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(202)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.34)" transform="rotate(247)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(15)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.45)" transform="rotate(75)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.45)" transform="rotate(195)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(255)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.34)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.34)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.34)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.5)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.45)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.5)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.45)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.5)" transform="rotate(255)"/>
         <circle r="12" fill="rgba(247,240,220,0.55)"/>
-        <circle r="7" fill="rgba(226,201,126,0.72)"/>
+        <circle r="7" fill="rgba(160,185,205,0.72)"/>
         <circle r="4" fill="rgba(247,240,220,0.8)"/>
-        <circle r="2" fill="rgba(201,168,76,0.9)"/>
+        <circle r="2" fill="rgba(91,127,168,0.9)"/>
       </g>
     </svg>
   </div>
@@ -1078,9 +1108,13 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <p class="hero-bismillah">﷽ — Bismillahirrahmanirrahim</p>
     <p class="hero-invite">Dengan penuh kerendahan hati, kami menjemput kehadiran</p>
     <div class="hero-line"></div>
-    <div class="hero-groom">Haqimi</div>
+    <div class="hero-monogram" aria-hidden="true">
+      <span class="mono-n">N</span>
+      <span class="mono-h">H</span>
+    </div>
+    <div class="hero-groom">Nabilah</div>
     <div class="hero-amp">&amp;</div>
-    <div class="hero-bride">Nabilah</div>
+    <div class="hero-bride">Haqimi</div>
     <p class="hero-date">Isnin &nbsp;·&nbsp; 31 Ogos 2026</p>
     <p class="hero-hashtags">#BellaFoundHerQimistry &nbsp;·&nbsp; #QimiRingTheBella &nbsp;·&nbsp; #QimiBella2026</p>
   </div>
@@ -1115,11 +1149,11 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   <p class="section-eyebrow">Bakal Pengantin</p>
   <div class="divider"><span>✦</span></div>
 
-  <div class="couple-big-name reveal reveal-delay-1">Muhammad Haqimi</div>
-  <div class="couple-big-full reveal reveal-delay-1">Muhammad Haqimi bin Harun</div>
+  <div class="couple-big-name reveal reveal-delay-1">Nadiatul Nabilah</div>
+  <div class="couple-big-full reveal reveal-delay-1">Nadiatul Nabilah binti Zahar</div>
   <div class="couple-big-amp reveal reveal-delay-2">&amp;</div>
-  <div class="couple-big-name reveal reveal-delay-3">Nadiatul Nabilah</div>
-  <div class="couple-big-full reveal reveal-delay-3">Nadiatul Nabilah binti Zahar</div>
+  <div class="couple-big-name reveal reveal-delay-3">Muhammad Haqimi</div>
+  <div class="couple-big-full reveal reveal-delay-3">Muhammad Haqimi bin Harun</div>
 </div>
 
 <!-- ══════════════ EVENTS ══════════════ -->
@@ -1207,7 +1241,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     Isnin &nbsp;·&nbsp; 31 Ogos 2026
   </p>
   <div class="savedate-btns">
-    <a class="savedate-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Haqimi+%26+Nabilah&dates=20260831T040000Z%2F20260831T090000Z&details=Walimatul+%27Urus+%E2%80%94+Haqimi+%26+Nabilah+%7C+qimibella.vercel.app&location=Balik+Bukit%2C+Melaka" target="_blank" rel="noopener">
+    <a class="savedate-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Nabilah+%26+Haqimi&dates=20260831T040000Z%2F20260831T090000Z&details=Walimatul+%27Urus+%E2%80%94+Nabilah+%26+Haqimi+%7C+qimibella.vercel.app&location=Balik+Bukit%2C+Melaka" target="_blank" rel="noopener">
       Google Calendar
     </a>
     <button class="savedate-btn" onclick="downloadICS()">
@@ -1301,13 +1335,13 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     Sebarang pertanyaan mengenai majlis, sila hubungi kami terus melalui WhatsApp.
   </p>
   <div class="hubungi-btns">
-    <a class="wa-btn" href="https://wa.me/601798198569?text=Assalamualaikum+Haqimi%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+anda." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Haqimi
-    </a>
     <a class="wa-btn" href="https://wa.me/601962444390?text=Assalamualaikum+Nabilah%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+anda." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Nabilah
+    </a>
+    <a class="wa-btn" href="https://wa.me/601798198569?text=Assalamualaikum+Haqimi%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+anda." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Haqimi
     </a>
   </div>
 </div>
@@ -1337,98 +1371,98 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   <!-- floral top-left -->
   <div class="footer-floral footer-floral-tl">
     <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" fill="none"/>
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(91,127,168,0.3)" stroke-width="1.5" fill="none"/>
       <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.32)"/>
       <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.26)"/>
       <path d="M86 143 C68 128 62 112 70 106 C78 116 82 130 86 143Z" fill="rgba(140,108,28,0.28)"/>
       <path d="M86 143 C100 130 103 112 96 108 C90 120 88 132 86 143Z" fill="rgba(140,108,28,0.22)"/>
       <g transform="translate(178,28)">
-        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.5)"/>
-        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.4)"/>
-        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.4)"/>
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(91,127,168,0.5)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(160,185,205,0.4)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(160,185,205,0.4)"/>
         <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.45)"/>
-        <path d="M0 0 C1 7 3 14 6 22" stroke="rgba(201,168,76,0.28)" stroke-width="1" fill="none"/>
+        <path d="M0 0 C1 7 3 14 6 22" stroke="rgba(91,127,168,0.28)" stroke-width="1" fill="none"/>
       </g>
       <g transform="translate(170,82)">
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(60)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(120)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.38)" transform="rotate(240)"/>
-        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(201,168,76,0.32)" transform="rotate(300)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.32)" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.38)" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.32)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.38)" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-9" rx="5" ry="8" fill="rgba(91,127,168,0.32)" transform="rotate(300)"/>
         <circle r="4" fill="rgba(247,240,220,0.65)"/>
       </g>
       <g transform="translate(93,88)">
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(45)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(225)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.28)" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(315)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(22)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(67)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(112)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(157)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.42)" transform="rotate(202)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.38)" transform="rotate(247)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(15)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(75)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.5)" transform="rotate(195)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.55)" transform="rotate(255)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.28)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.28)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.28)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.28)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.42)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.38)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.55)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.5)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.55)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.5)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.55)" transform="rotate(255)"/>
         <circle r="12" fill="rgba(247,240,220,0.6)"/>
-        <circle r="7" fill="rgba(226,201,126,0.8)"/>
+        <circle r="7" fill="rgba(160,185,205,0.8)"/>
         <circle r="4" fill="rgba(247,240,220,0.88)"/>
-        <circle r="2" fill="rgba(201,168,76,1)"/>
+        <circle r="2" fill="rgba(91,127,168,1)"/>
       </g>
-      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.3)"/>
-      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.24)"/>
-      <circle cx="72" cy="58" r="2" fill="rgba(201,168,76,0.2)"/>
-      <circle cx="188" cy="112" r="2" fill="rgba(201,168,76,0.28)"/>
+      <circle cx="150" cy="142" r="3" fill="rgba(91,127,168,0.3)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(91,127,168,0.24)"/>
+      <circle cx="72" cy="58" r="2" fill="rgba(91,127,168,0.2)"/>
+      <circle cx="188" cy="112" r="2" fill="rgba(91,127,168,0.28)"/>
     </svg>
   </div>
 
   <!-- floral bottom-right (rotated 180° via CSS) -->
   <div class="footer-floral footer-floral-br">
     <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(201,168,76,0.28)" stroke-width="1.5" fill="none"/>
+      <path d="M165 220 C150 190 125 165 95 148 C80 140 65 132 50 122" stroke="rgba(91,127,168,0.28)" stroke-width="1.5" fill="none"/>
       <path d="M128 175 C110 158 92 156 98 148 C108 153 122 163 128 175Z" fill="rgba(140,108,28,0.28)"/>
       <path d="M128 175 C143 162 148 146 138 143 C131 153 128 165 128 175Z" fill="rgba(140,108,28,0.22)"/>
       <g transform="translate(178,28)">
-        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(201,168,76,0.42)"/>
-        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(226,201,126,0.35)"/>
-        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(226,201,126,0.35)"/>
+        <path d="M0 0 C-7,-18 -4,-28 0,-23 C4,-28 7,-18 0,0Z" fill="rgba(91,127,168,0.42)"/>
+        <path d="M0 0 C7,-15 12,-23 8,-20 C9,-13 4,-6 0,0Z" fill="rgba(160,185,205,0.35)"/>
+        <path d="M0 0 C-7,-15 -12,-23 -8,-20 C-9,-13 -4,-6 0,0Z" fill="rgba(160,185,205,0.35)"/>
         <ellipse cx="0" cy="-9" rx="4" ry="6" fill="rgba(247,240,220,0.4)"/>
       </g>
       <g transform="translate(93,88)">
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(45)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(225)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.24)" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(201,168,76,0.2)" transform="rotate(315)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(22)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(67)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(112)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(157)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.36)" transform="rotate(202)"/>
-        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(201,168,76,0.32)" transform="rotate(247)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(15)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.44)" transform="rotate(75)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.44)" transform="rotate(195)"/>
-        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(226,201,126,0.48)" transform="rotate(255)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.24)" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="16" ry="25" fill="rgba(91,127,168,0.2)" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.36)" transform="rotate(22)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.32)" transform="rotate(67)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.36)" transform="rotate(112)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.32)" transform="rotate(157)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.36)" transform="rotate(202)"/>
+        <ellipse cx="0" cy="-27" rx="13" ry="20" fill="rgba(91,127,168,0.32)" transform="rotate(247)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.48)" transform="rotate(15)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.44)" transform="rotate(75)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.48)" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.44)" transform="rotate(195)"/>
+        <ellipse cx="0" cy="-17" rx="9" ry="14" fill="rgba(160,185,205,0.48)" transform="rotate(255)"/>
         <circle r="12" fill="rgba(247,240,220,0.55)"/>
-        <circle r="7" fill="rgba(226,201,126,0.72)"/>
+        <circle r="7" fill="rgba(160,185,205,0.72)"/>
         <circle r="4" fill="rgba(247,240,220,0.82)"/>
-        <circle r="2" fill="rgba(201,168,76,0.9)"/>
+        <circle r="2" fill="rgba(91,127,168,0.9)"/>
       </g>
-      <circle cx="150" cy="142" r="3" fill="rgba(201,168,76,0.26)"/>
-      <circle cx="38" cy="98" r="2.5" fill="rgba(201,168,76,0.2)"/>
+      <circle cx="150" cy="142" r="3" fill="rgba(91,127,168,0.26)"/>
+      <circle cx="38" cy="98" r="2.5" fill="rgba(91,127,168,0.2)"/>
     </svg>
   </div>
 
@@ -1445,11 +1479,11 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
       <circle cx="67" cy="35" r="2" fill="#C9A84C"/>
     </svg>
 
-    <div class="footer-title">Haqimi &amp; Nabilah</div>
+    <div class="footer-title">Nabilah &amp; Haqimi</div>
 
     <div class="footer-ayat">
       "Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan isteri-isteri untuk kamu dari jenis kamu sendiri, supaya kamu bersenang hati dan hidup mesra dengannya."
-      <br><span style="font-size:13px;color:rgba(247,240,220,0.3)">— Surah Ar-Rum: 21</span>
+      <br><span style="font-size:13px;color:rgba(235,248,252,0.35)">— Surah Ar-Rum: 21</span>
     </div>
 
     <div class="footer-sep"></div>
@@ -1614,8 +1648,8 @@ function downloadICS(){
     'BEGIN:VEVENT',
     'DTSTART:20260831T040000Z',
     'DTEND:20260831T090000Z',
-    'SUMMARY:Majlis Perkahwinan Haqimi & Nabilah',
-    "DESCRIPTION:Walimatul 'Urus — Haqimi & Nabilah\\nhttps://qimibella.vercel.app/",
+    'SUMMARY:Majlis Perkahwinan Nabilah & Haqimi',
+    "DESCRIPTION:Walimatul 'Urus — Nabilah & Haqimi\\nhttps://qimibella.vercel.app/",
     'LOCATION:Balik Bukit\\, Melaka',
     'END:VEVENT','END:VCALENDAR'
   ].join('\r\n');
