@@ -18,7 +18,7 @@
   --white:#F8FCFD;
   --cream:#D0E8ED;
   --text:#2D4A62;
-  --muted:#6B8FA8;
+  --muted:#3C5E78;
   --border:rgba(74,107,136,0.25);
 }
 html{scroll-behavior:smooth}
@@ -91,9 +91,9 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   opacity:0;animation:fadeUp 1s 0.3s forwards;
 }
 .hero-invite{
-  font-family:'Montserrat',sans-serif;font-weight:200;
+  font-family:'Montserrat',sans-serif;font-weight:400;
   font-size:11px;letter-spacing:0.4em;text-transform:uppercase;
-  color:rgba(58,86,110,0.45);margin-bottom:36px;
+  color:rgba(45,74,98,0.75);margin-bottom:36px;
   opacity:0;animation:fadeUp 1s 0.6s forwards;
 }
 .hero-line{
@@ -105,19 +105,19 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 
 .hero-groom{
   font-family:'Great Vibes',cursive;
-  font-size:clamp(52px,11vw,96px);color:var(--maroon-deep);
+  font-size:clamp(68px,15vw,130px);color:var(--maroon-deep);
   line-height:1.1;letter-spacing:0.01em;
   opacity:0;animation:fadeUp 1s 1s forwards;
 }
 .hero-amp{
   font-family:'Great Vibes',cursive;
-  font-size:clamp(36px,7vw,64px);color:var(--gold);
+  font-size:clamp(48px,9vw,88px);color:var(--gold);
   display:block;margin:4px 0;
   opacity:0;animation:fadeUp 1s 1.2s forwards;
 }
 .hero-bride{
   font-family:'Great Vibes',cursive;
-  font-size:clamp(52px,11vw,96px);color:var(--maroon-deep);
+  font-size:clamp(68px,15vw,130px);color:var(--maroon-deep);
   line-height:1.1;letter-spacing:0.01em;
   opacity:0;animation:fadeUp 1s 1.4s forwards;
 }
@@ -128,9 +128,9 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   opacity:0;animation:fadeUp 1s 1.6s forwards;
 }
 .hero-hashtags{
-  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-family:'Montserrat',sans-serif;font-weight:400;
   font-size:10px;letter-spacing:0.15em;
-  color:rgba(58,86,110,0.3);margin-top:12px;
+  color:rgba(45,74,98,0.6);margin-top:12px;
   opacity:0;animation:fadeUp 1s 1.8s forwards;
 }
 
@@ -140,7 +140,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   display:flex;flex-direction:column;align-items:center;
   opacity:0;animation:fadeUp 1s 2s forwards;
 }
-.scroll-hint p{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(58,86,110,0.3)}
+.scroll-hint p{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(45,74,98,0.55)}
 .scroll-hint span{display:block;width:1px;height:44px;background:linear-gradient(180deg,var(--gold),transparent);margin:8px auto 0;animation:scrollDown 2s 2.5s infinite}
 @keyframes scrollDown{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1}100%{opacity:0;transform:scaleY(1);transform-origin:top}}
 
@@ -155,7 +155,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .section-title{
   font-family:'Playfair Display',serif;font-weight:400;
-  font-size:clamp(26px,4vw,40px);text-align:center;
+  font-size:clamp(32px,5.5vw,54px);text-align:center;
   color:var(--maroon-deep);margin-bottom:12px;line-height:1.2;
 }
 .section-title.light{color:var(--maroon-deep)}
@@ -192,7 +192,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .family-names{
   font-family:'Playfair Display',serif;font-weight:400;
-  font-size:18px;color:var(--maroon-deep);line-height:1.8;
+  font-size:22px;color:var(--maroon-deep);line-height:1.8;
 }
 .family-and{
   color:var(--gold);font-style:italic;font-size:16px;
@@ -203,7 +203,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .family-invite-text{
   font-family:'EB Garamond',serif;font-style:italic;
-  font-size:16px;color:rgba(58,86,110,0.5);
+  font-size:19px;color:rgba(45,74,98,0.78);
   line-height:1.9;margin:28px 0;
 }
 
@@ -211,24 +211,25 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .couple-reveal{
   background:var(--cream);
   padding:80px 28px;text-align:center;
+  position:relative;overflow:hidden;
 }
 .couple-big-name{
   font-family:'Playfair Display',serif;
-  font-size:clamp(36px,7vw,64px);
+  font-size:clamp(46px,9vw,84px);
   color:var(--maroon-deep);line-height:1.1;
 }
 .couple-big-full{
-  font-family:'EB Garamond',serif;font-size:15px;
-  color:var(--muted);margin-top:8px;font-style:italic;
+  font-family:'EB Garamond',serif;font-size:18px;
+  color:var(--muted);margin-top:10px;font-style:italic;
 }
 .couple-big-amp{
   font-family:'Playfair Display',serif;font-style:italic;
-  font-size:clamp(40px,8vw,80px);color:var(--gold);
+  font-size:clamp(52px,10vw,100px);color:var(--gold);
   line-height:1;margin:12px 0;
 }
 
 /* ── EVENT CARDS ── */
-.events-bg{background:var(--gold-pale)}
+.events-bg{background:var(--gold-pale);position:relative;overflow:hidden;}
 .events-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:2px;
   max-width:720px;margin:0 auto;
@@ -254,15 +255,15 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .event-name{
   font-family:'Playfair Display',serif;
-  font-size:26px;color:var(--maroon-deep);margin-bottom:20px;
+  font-size:32px;color:var(--maroon-deep);margin-bottom:20px;
 }
 .event-detail-row{
   display:flex;align-items:center;gap:10px;
   margin-bottom:10px;justify-content:center;
 }
-.event-detail-row svg{width:12px;height:12px;stroke:var(--gold);fill:none;flex-shrink:0}
+.event-detail-row svg{width:14px;height:14px;stroke:var(--gold);fill:none;flex-shrink:0}
 .event-detail-row span{
-  font-family:'Montserrat',sans-serif;font-size:11px;
+  font-family:'Montserrat',sans-serif;font-size:13px;
   color:var(--muted);letter-spacing:0.05em;
   line-height:1.6;
 }
@@ -283,6 +284,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .countdown-section{
   background:var(--white);
   padding:80px 28px;text-align:center;
+  position:relative;overflow:hidden;
 }
 .countdown-grid{
   display:grid;grid-template-columns:repeat(4,1fr);
@@ -298,19 +300,19 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .count-cell:last-child{border-right:none}
 .count-num{
   font-family:'Playfair Display',serif;
-  font-size:48px;font-weight:400;line-height:1;
+  font-size:62px;font-weight:400;line-height:1;
   color:var(--maroon-deep);
 }
 .count-label{
   font-family:'Montserrat',sans-serif;
-  font-size:7px;letter-spacing:0.5em;text-transform:uppercase;
-  color:rgba(58,86,110,0.4);margin-top:6px;
+  font-size:9px;letter-spacing:0.5em;text-transform:uppercase;
+  color:rgba(45,74,98,0.65);margin-top:8px;
 }
 
 
 
 /* ── RSVP ── */
-.rsvp-section{background:var(--cream);padding:80px 28px}
+.rsvp-section{background:var(--cream);padding:80px 28px;position:relative;overflow:hidden;}
 .rsvp-inner{max-width:480px;margin:0 auto}
 .rsvp-card{
   background:var(--white);
@@ -339,7 +341,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
   outline:none;transition:border-color 0.2s;
   border-radius:0;-webkit-appearance:none;
 }
-.form-input::placeholder,.form-textarea::placeholder{color:rgba(58,86,110,0.25)}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(45,74,98,0.38)}
 .form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold)}
 .form-select option{background:var(--white);color:var(--text)}
 .form-textarea{resize:vertical;min-height:80px}
@@ -349,10 +351,10 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .attend-opt input{position:absolute;opacity:0;pointer-events:none}
 .attend-opt label{
   display:block;padding:11px;text-align:center;
-  border:1px solid rgba(91,127,168,0.25);cursor:pointer;
+  border:1px solid rgba(91,127,168,0.35);cursor:pointer;
   font-family:'Montserrat',sans-serif;font-size:10px;
   letter-spacing:0.2em;text-transform:uppercase;
-  color:rgba(58,86,110,0.4);transition:all 0.2s;
+  color:rgba(45,74,98,0.7);transition:all 0.2s;
 }
 .attend-opt input:checked+label{
   background:var(--gold);color:var(--maroon-deep);
@@ -395,7 +397,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 }
 .wish-text{
   font-family:'Playfair Display',serif;font-style:italic;
-  font-size:17px;color:var(--text);line-height:1.7;
+  font-size:20px;color:var(--text);line-height:1.7;
   margin-bottom:10px;
 }
 .wish-meta{
@@ -418,26 +420,26 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 .footer-ornament{margin-bottom:28px;opacity:0.5}
 .footer-title{
   font-family:'Playfair Display',serif;
-  font-size:clamp(32px,6vw,56px);color:var(--gold-light);
+  font-size:clamp(44px,8vw,76px);color:var(--gold-light);
   margin-bottom:28px;line-height:1.1;
 }
 .footer-ayat{
   font-family:'EB Garamond',serif;font-style:italic;
-  font-size:16px;color:rgba(235,248,252,0.55);
+  font-size:20px;color:rgba(235,248,252,0.55);
   line-height:2;max-width:420px;margin:0 auto 32px;
 }
 .footer-sep{width:60px;height:1px;background:rgba(91,127,168,0.3);margin:32px auto}
 .footer-contacts{
-  font-family:'Montserrat',sans-serif;font-weight:300;
-  font-size:12px;color:rgba(235,248,252,0.45);
+  font-family:'Montserrat',sans-serif;font-weight:400;
+  font-size:14px;color:rgba(235,248,252,0.75);
   line-height:2.2;
 }
 .footer-contacts a{color:var(--gold-light);text-decoration:none}
 .footer-hashtags{
   margin-top:28px;
-  font-family:'Montserrat',sans-serif;font-weight:300;
+  font-family:'Montserrat',sans-serif;font-weight:400;
   font-size:11px;letter-spacing:0.1em;
-  color:var(--gold);line-height:2;
+  color:var(--gold-light);line-height:2;
 }
 .footer-credit{
   margin-top:40px;font-family:'Montserrat',sans-serif;
@@ -492,34 +494,34 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   /* ── Sections ── */
   .section { padding: 56px 20px; }
   .section-full { padding: 56px 20px; }
-  .section-eyebrow { font-size: 8px; letter-spacing: 0.45em; }
-  .section-title { font-size: 26px; }
+  .section-eyebrow { font-size: 9px; letter-spacing: 0.45em; }
+  .section-title { font-size: 30px; }
 
   /* ── Family card ── */
   .family-wrap { padding: 36px 20px; }
   .family-wrap::before { inset: 8px; }
   .family-wrap::after  { inset: 13px; }
-  .family-names  { font-size: 16px; line-height: 1.9; }
-  .family-invite-text { font-size: 14px; }
+  .family-names  { font-size: 18px; line-height: 1.9; }
+  .family-invite-text { font-size: 16px; }
 
   /* ── Couple reveal ── */
   .couple-reveal { padding: 56px 20px; }
-  .couple-big-name { font-size: 36px; }
-  .couple-big-full { font-size: 13px; }
-  .couple-big-amp  { font-size: 52px; }
+  .couple-big-name { font-size: 42px; }
+  .couple-big-full { font-size: 15px; }
+  .couple-big-amp  { font-size: 60px; }
 
   /* ── Event card ── */
   .event-card { padding: 36px 20px; }
-  .event-name { font-size: 22px; }
-  .event-detail-row span { font-size: 12px; }
+  .event-name { font-size: 26px; }
+  .event-detail-row span { font-size: 13px; }
   .map-btns { gap: 8px; }
   .map-btn { padding: 10px 14px; font-size: 9px; letter-spacing: 0.2em; }
 
   /* ── Countdown ── */
   .countdown-section { padding: 56px 20px; }
   .countdown-grid { max-width: 100%; }
-  .count-num   { font-size: 40px; }
-  .count-label { font-size: 7px; }
+  .count-num   { font-size: 50px; }
+  .count-label { font-size: 8px; }
   .count-cell  { padding: 22px 10px; }
 
   /* ── RSVP ── */
@@ -534,10 +536,10 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
   /* ── Footer ── */
   .footer { padding: 60px 20px; }
-  .footer-title { font-size: 34px; }
-  .footer-ayat  { font-size: 14px; }
-  .footer-hashtags { font-size: 10px; }
-  .footer-contacts { font-size: 11px; }
+  .footer-title { font-size: 40px; }
+  .footer-ayat  { font-size: 16px; }
+  .footer-hashtags { font-size: 11px; }
+  .footer-contacts { font-size: 13px; }
 }
 
 @media(max-width:480px){
@@ -546,11 +548,11 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
   /* ── Family ── */
   .family-wrap { padding: 28px 16px; }
-  .family-names { font-size: 15px; }
+  .family-names { font-size: 17px; }
 
   /* ── Couple ── */
-  .couple-big-name { font-size: 30px; }
-  .couple-big-amp  { font-size: 44px; margin: 6px 0; }
+  .couple-big-name { font-size: 36px; }
+  .couple-big-amp  { font-size: 52px; margin: 6px 0; }
 
   /* ── Countdown: 2x2 grid on very small screens ── */
   .countdown-grid { grid-template-columns: repeat(2,1fr); }
@@ -579,23 +581,38 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 }
 
 /* ── SIDE FLORALS (fixed, full page) ── */
-.side-floral{position:fixed;top:50%;transform:translateY(-50%);pointer-events:none;z-index:0;opacity:0.38;}
-.side-floral-l{left:-18px;width:90px;height:340px;}
-.side-floral-r{right:-18px;width:90px;height:340px;transform:translateY(-50%) scaleX(-1);}
-@media(max-width:768px){.side-floral{display:none}}
+.side-floral{position:fixed;top:50%;transform:translateY(-50%);pointer-events:none;z-index:0;opacity:0.45;}
+.side-floral-l{left:-10px;width:130px;height:480px;}
+.side-floral-r{right:-10px;width:130px;height:480px;transform:translateY(-50%) scaleX(-1);}
+@media(max-width:768px){
+  .side-floral{opacity:0.28}
+  .side-floral-l{left:-22px;width:80px;height:320px}
+  .side-floral-r{right:-22px;width:80px;height:320px}
+}
+@media(max-width:480px){.side-floral{display:none}}
 
 /* ── FOOTER FLORALS ── */
 .footer-floral{position:absolute;pointer-events:none;z-index:0;}
-.footer-floral-tl{top:-10px;left:-10px;width:150px;height:165px;opacity:0.5;}
-.footer-floral-br{bottom:-10px;right:-10px;width:120px;height:135px;opacity:0.4;transform:rotate(180deg);}
+.footer-floral-tl{top:-15px;left:-15px;width:210px;height:235px;opacity:0.65;}
+.footer-floral-br{bottom:-15px;right:-15px;width:175px;height:195px;opacity:0.58;transform:rotate(180deg);}
 
 /* ── HERO FLORALS ── */
 .hero-floral{position:absolute;pointer-events:none;z-index:1;}
-.hero-floral-tr{top:-10px;right:-10px;width:210px;height:230px;opacity:0.85;}
-.hero-floral-bl{bottom:-10px;left:-10px;width:160px;height:175px;opacity:0.7;transform:rotate(180deg);}
+.hero-floral-tr{top:-10px;right:-10px;width:280px;height:310px;opacity:0.9;}
+.hero-floral-bl{bottom:-10px;left:-10px;width:210px;height:235px;opacity:0.82;transform:rotate(180deg);}
 @media(max-width:480px){
-  .hero-floral-tr{width:150px;height:165px;}
-  .hero-floral-bl{width:110px;height:120px;}
+  .hero-floral-tr{width:180px;height:200px;}
+  .hero-floral-bl{width:140px;height:155px;}
+}
+
+/* ── SECTION CORNER ROSES ── */
+.sec-rose{position:absolute;pointer-events:none;z-index:0;}
+.sec-rose-tl{top:-8px;left:-8px;width:110px;height:110px;opacity:0.55;}
+.sec-rose-tr{top:-8px;right:-8px;width:100px;height:100px;opacity:0.5;transform:scaleX(-1);}
+.sec-rose-bl{bottom:-8px;left:-8px;width:100px;height:100px;opacity:0.5;transform:rotate(180deg) scaleX(-1);}
+.sec-rose-br{bottom:-8px;right:-8px;width:110px;height:110px;opacity:0.55;transform:rotate(180deg);}
+@media(max-width:480px){
+  .sec-rose{width:75px !important;height:75px !important;opacity:0.35 !important}
 }
 
 @media(max-width:360px){
@@ -647,7 +664,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .salam-qr img{width:120px;height:120px;object-fit:contain}
 
 /* ── HUBUNGI ── */
-.hubungi-section{background:var(--cream);padding:60px 28px;text-align:center}
+.hubungi-section{background:var(--cream);padding:60px 28px;text-align:center;position:relative;overflow:hidden;}
 .hubungi-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
 .wa-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:#25D366;color:#fff;text-decoration:none;transition:background 0.25s;font-family:'Montserrat',sans-serif;font-size:9px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase}
 .wa-btn:hover{background:#128C7E}
@@ -670,7 +687,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 /* ── FLORAL RECOLOR: hue-rotate turns blue petals → rose, brown leaves → teal ── */
 .side-floral svg,
 .hero-floral svg,
-.footer-floral svg{
+.footer-floral svg,
+.sec-rose svg{
   filter:hue-rotate(130deg) saturate(2.4) brightness(1.12);
 }
 
@@ -710,7 +728,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .env-top-text{
   font-family:'Montserrat',sans-serif;
   font-size:8px;letter-spacing:0.6em;text-transform:uppercase;
-  color:rgba(56,87,110,0.5);margin-bottom:48px;
+  color:rgba(45,74,98,0.75);margin-bottom:48px;
   animation:hintPulse 3s ease-in-out infinite;
 }
 
@@ -793,7 +811,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .env-card-date{
   font-family:'Montserrat',sans-serif;font-size:7px;
   letter-spacing:0.35em;text-transform:uppercase;
-  color:rgba(56,87,110,0.4);
+  color:rgba(45,74,98,0.65);
 }
 
 /* Wax seal */
@@ -816,7 +834,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
   margin-top:52px;
   font-family:'Montserrat',sans-serif;
   font-size:8px;letter-spacing:0.45em;text-transform:uppercase;
-  color:rgba(58,86,110,0.38);
+  color:rgba(45,74,98,0.65);
   animation:hintPulse 2s ease-in-out infinite;
 }
 @keyframes hintPulse{
@@ -1146,6 +1164,10 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ COUPLE ══════════════ -->
 <div class="couple-reveal reveal">
+  <div class="sec-rose sec-rose-tl"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-tr"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-bl"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-br"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
   <p class="section-eyebrow">Bakal Pengantin</p>
   <div class="divider"><span>✦</span></div>
 
@@ -1158,6 +1180,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ EVENTS ══════════════ -->
 <div class="events-bg section-full reveal">
+  <div class="sec-rose sec-rose-tl" style="width:120px;height:120px;opacity:0.5"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-tr" style="width:120px;height:120px;opacity:0.5"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
   <div style="max-width:600px;margin:0 auto;padding:80px 28px 40px">
     <p class="section-eyebrow">Aturcara Majlis</p>
     <h2 class="section-title light">Jemputan Kehadiran</h2>
@@ -1197,11 +1221,15 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
         <div class="event-name" style="font-size:20px;margin-bottom:14px">Walimatul 'Urus</div>
         <div class="event-detail-row">
           <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          <span>11:30 tengah hari — 5:00 petang</span>
+          <span>Jamuan Makan: 11:30 pagi — 4:00 petang</span>
+        </div>
+        <div class="event-detail-row">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>Ketibaan Pengantin: 12:30 tengah hari</span>
         </div>
         <div class="event-detail-row" style="align-items:flex-start">
           <svg viewBox="0 0 24 24" stroke-width="1.5" style="margin-top:2px"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-          <span>Rumah Pengantin Perempuan<br>Balik Bukit, Melaka</span>
+          <span>Lot 1567, Jalan Hajah Maimon<br>Kampung Tambak Bugis, Telok Mas<br>75460 Melaka</span>
         </div>
         <div class="map-btns" style="margin-top:14px">
           <a class="map-btn" href="https://waze.com/ul?q=https://maps.app.goo.gl/JoRdubGkanzUXzLk8&navigate=yes" target="_blank" rel="noopener">
@@ -1221,6 +1249,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ COUNTDOWN ══════════════ -->
 <div class="countdown-section reveal">
+  <div class="sec-rose sec-rose-tl"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-tr"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
   <p class="section-eyebrow">Hitung Detik Menuju Hari Bahagia</p>
   <h2 class="section-title light">Masa Berbaki</h2>
   <div class="divider"><span>✦</span></div>
@@ -1241,7 +1271,7 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     Isnin &nbsp;·&nbsp; 31 Ogos 2026
   </p>
   <div class="savedate-btns">
-    <a class="savedate-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Nabilah+%26+Haqimi&dates=20260831T040000Z%2F20260831T090000Z&details=Walimatul+%27Urus+%E2%80%94+Nabilah+%26+Haqimi+%7C+qimibella.vercel.app&location=Balik+Bukit%2C+Melaka" target="_blank" rel="noopener">
+    <a class="savedate-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Nabilah+%26+Haqimi&dates=20260831T040000Z%2F20260831T090000Z&details=Walimatul+%27Urus+%E2%80%94+Nabilah+%26+Haqimi+%7C+qimibella.vercel.app&location=Lot+1567%2C+Jalan+Hajah+Maimon%2C+Kampung+Tambak+Bugis%2C+75460+Melaka" target="_blank" rel="noopener">
       Google Calendar
     </a>
     <button class="savedate-btn" onclick="downloadICS()">
@@ -1255,6 +1285,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ RSVP ══════════════ -->
 <div class="rsvp-section reveal">
+  <div class="sec-rose sec-rose-tl"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-tr"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
   <div class="rsvp-inner">
     <p class="section-eyebrow">Pengesahan Kehadiran</p>
     <h2 class="section-title light">RSVP</h2>
@@ -1328,20 +1360,30 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 
 <!-- ══════════════ HUBUNGI ══════════════ -->
 <div class="hubungi-section reveal">
+  <div class="sec-rose sec-rose-tl"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
+  <div class="sec-rose sec-rose-tr"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 78 C10 58 16 38 22 18" stroke="rgba(140,108,28,0.4)" stroke-width="1.2" fill="none"/><path d="M14 52 C2 45 0 33 6 29 C12 38 14 46 14 52Z" fill="rgba(140,108,28,0.28)"/><path d="M14 52 C26 45 28 33 22 29 C18 38 15 46 14 52Z" fill="rgba(140,108,28,0.2)"/><g transform="translate(22,18)"><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(45)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(90)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(135)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(180)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(225)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.38)" transform="rotate(270)"/><ellipse cx="0" cy="-14" rx="8" ry="11" fill="rgba(91,127,168,0.32)" transform="rotate(315)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(22)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.46)" transform="rotate(112)"/><ellipse cx="0" cy="-9" rx="5" ry="7" fill="rgba(160,185,205,0.52)" transform="rotate(202)"/><circle r="5" fill="rgba(247,240,220,0.65)"/><circle r="2.5" fill="rgba(160,185,205,0.88)"/></g><g transform="translate(22,6)"><path d="M0 0 C-3,-8 -1,-13 0,-10 C1,-13 3,-8 0,0Z" fill="rgba(91,127,168,0.45)"/><path d="M0 0 C2,-7 4,-10 3,-9 C2,-6 1,-3 0,0Z" fill="rgba(160,185,205,0.38)"/></g></svg></div>
   <p class="section-eyebrow">Pertanyaan Majlis</p>
   <h2 class="section-title">Hubungi Kami</h2>
   <div class="divider"><span>✦</span></div>
   <p style="font-family:'EB Garamond',serif;font-style:italic;font-size:16px;color:var(--muted);text-align:center;line-height:1.8;max-width:400px;margin:0 auto">
     Sebarang pertanyaan mengenai majlis, sila hubungi kami terus melalui WhatsApp.
   </p>
-  <div class="hubungi-btns">
-    <a class="wa-btn" href="https://wa.me/601962444390?text=Assalamualaikum+Nabilah%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+anda." target="_blank" rel="noopener">
+  <div class="hubungi-btns" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:480px;margin:32px auto 0">
+    <a class="wa-btn" href="https://wa.me/60196677670?text=Assalamualaikum+Zahar%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+Nabilah+%26+Haqimi." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Nabilah
+      <span>Zahar <small style="display:block;font-size:7px;opacity:0.8;letter-spacing:0.1em">(Ayah)</small></span>
     </a>
-    <a class="wa-btn" href="https://wa.me/601798198569?text=Assalamualaikum+Haqimi%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+anda." target="_blank" rel="noopener">
+    <a class="wa-btn" href="https://wa.me/60196606604?text=Assalamualaikum+Sa%27diah%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+Nabilah+%26+Haqimi." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Haqimi
+      <span>Sa'diah <small style="display:block;font-size:7px;opacity:0.8;letter-spacing:0.1em">(Ibu)</small></span>
+    </a>
+    <a class="wa-btn" href="https://wa.me/60179042054?text=Assalamualaikum+Syafiq%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+Nabilah+%26+Haqimi." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>Syafiq <small style="display:block;font-size:7px;opacity:0.8;letter-spacing:0.1em">(Anak)</small></span>
+    </a>
+    <a class="wa-btn" href="https://wa.me/60186608752?text=Assalamualaikum+Zuhairi%2C+saya+ingin+bertanya+tentang+majlis+perkahwinan+Nabilah+%26+Haqimi." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>Zuhairi <small style="display:block;font-size:7px;opacity:0.8;letter-spacing:0.1em">(Anak)</small></span>
     </a>
   </div>
 </div>
@@ -1464,8 +1506,8 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
     <div class="footer-title">Nabilah &amp; Haqimi</div>
 
     <div class="footer-ayat">
-      "Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan isteri-isteri untuk kamu dari jenis kamu sendiri, supaya kamu bersenang hati dan hidup mesra dengannya."
-      <br><span style="font-size:13px;color:rgba(235,248,252,0.35)">— Surah Ar-Rum: 21</span>
+      "Dan Kami ciptakan kamu berpasang-pasangan."
+      <br><span style="font-size:13px;color:rgba(235,248,252,0.65)">— Surah An-Naba (78:8)</span>
     </div>
 
     <div class="footer-sep"></div>
@@ -1632,7 +1674,7 @@ function downloadICS(){
     'DTEND:20260831T090000Z',
     'SUMMARY:Majlis Perkahwinan Nabilah & Haqimi',
     "DESCRIPTION:Walimatul 'Urus — Nabilah & Haqimi\\nhttps://qimibella.vercel.app/",
-    'LOCATION:Balik Bukit\\, Melaka',
+    'LOCATION:Lot 1567\\, Jalan Hajah Maimon\\, Kampung Tambak Bugis\\, 75460 Melaka',
     'END:VEVENT','END:VCALENDAR'
   ].join('\r\n');
   const a=document.createElement('a');
