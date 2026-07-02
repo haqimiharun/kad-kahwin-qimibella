@@ -460,7 +460,7 @@ body{background:var(--white);color:var(--text);font-family:'EB Garamond',serif;o
 
 /* ── GOLD PARTICLES ── */
 .particle{
-  position:fixed;pointer-events:none;z-index:0;
+  position:fixed;pointer-events:none;z-index:3;
   border-radius:50%;background:var(--gold);
   animation:floatUp linear infinite;
   opacity:0;
@@ -581,16 +581,16 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 }
 
 /* ── SIDE FLORALS (fixed, full page) ── */
-.side-floral{position:fixed;top:50%;transform:translateY(-50%);pointer-events:none;z-index:0;opacity:0.45;}
+.side-floral{position:fixed;top:50%;transform:translateY(-50%);pointer-events:none;z-index:4;opacity:0.45;}
 .side-floral-l{left:-10px;width:130px;height:480px;}
 .side-floral-r{right:-10px;width:130px;height:480px;transform:translateY(-50%) scaleX(-1);}
 @media(max-width:768px){
-  .side-floral{opacity:0.28}
+  .side-floral{opacity:0.30}
   .side-floral-l{left:-22px;width:80px;height:320px}
   .side-floral-r{right:-22px;width:80px;height:320px}
 }
 @media(max-width:480px){
-  .side-floral{opacity:0.18}
+  .side-floral{opacity:0.22}
   .side-floral-l{left:-28px;width:65px;height:260px}
   .side-floral-r{right:-28px;width:65px;height:260px}
 }
@@ -610,13 +610,13 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 }
 
 /* ── SECTION CORNER ROSES ── */
-.sec-rose{position:absolute;pointer-events:none;z-index:0;}
-.sec-rose-tl{top:-12px;left:-12px;width:160px;height:160px;opacity:0.65;}
-.sec-rose-tr{top:-12px;right:-12px;width:150px;height:150px;opacity:0.6;transform:scaleX(-1);}
-.sec-rose-bl{bottom:-12px;left:-12px;width:150px;height:150px;opacity:0.6;transform:rotate(180deg) scaleX(-1);}
-.sec-rose-br{bottom:-12px;right:-12px;width:160px;height:160px;opacity:0.65;transform:rotate(180deg);}
+.sec-rose{position:absolute;pointer-events:none;z-index:1;}
+.sec-rose-tl{top:0;left:0;width:180px;height:180px;opacity:0.70;}
+.sec-rose-tr{top:0;right:0;width:170px;height:170px;opacity:0.65;transform:scaleX(-1);}
+.sec-rose-bl{bottom:0;left:0;width:170px;height:170px;opacity:0.65;transform:rotate(180deg) scaleX(-1);}
+.sec-rose-br{bottom:0;right:0;width:180px;height:180px;opacity:0.70;transform:rotate(180deg);}
 @media(max-width:480px){
-  .sec-rose{width:110px !important;height:110px !important;opacity:0.45 !important}
+  .sec-rose{width:120px !important;height:120px !important;opacity:0.50 !important}
 }
 
 @media(max-width:360px){
@@ -700,9 +700,9 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 .particle{background:#D4889A !important}
 
 /* ── BACKGROUND WATERMARK ROSES ── */
-.bg-rose{position:absolute;pointer-events:none;z-index:0;opacity:0.18;}
+.bg-rose{position:absolute;pointer-events:none;z-index:1;opacity:0.26;}
 .bg-rose svg{filter:hue-rotate(130deg) saturate(2) brightness(1.1);}
-@media(max-width:480px){.bg-rose{opacity:0.12}}
+@media(max-width:480px){.bg-rose{opacity:0.18}}
 
 /* ── NH MONOGRAM ── */
 .hero-monogram{
@@ -1537,18 +1537,38 @@ input, select, textarea { font-size: 16px !important; } /* prevent iOS zoom */
 // ── Background watermark roses injected into all sections
 (function(){
   const SVG=`<svg viewBox="0 0 90 340" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M55 10 C52 60 50 110 48 160 C46 210 44 260 42 330" stroke="rgba(180,140,40,0.4)" stroke-width="1.5" fill="none"/><g transform="translate(55,18)"><path d="M0 0 C-6,-14 -3,-22 0,-18 C3,-22 6,-14 0,0Z" fill="rgba(91,127,168,0.55)"/><path d="M0 0 C6,-12 9,-18 6,-16 C7,-10 3,-5 0,0Z" fill="rgba(160,185,205,0.45)"/><path d="M0 0 C-6,-12 -9,-18 -6,-16 C-7,-10 -3,-5 0,0Z" fill="rgba(160,185,205,0.45)"/></g><path d="M52 70 C35 62 28 50 34 44 C42 52 48 62 52 70Z" fill="rgba(140,108,28,0.3)"/><path d="M52 70 C65 60 68 46 60 43 C55 54 52 64 52 70Z" fill="rgba(140,108,28,0.24)"/><g transform="translate(50,105)"><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(0)"/><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(60)"/><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(120)"/><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(180)"/><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.4)" transform="rotate(240)"/><ellipse cx="0" cy="-9" rx="6" ry="9" fill="rgba(91,127,168,0.35)" transform="rotate(300)"/><circle r="5" fill="rgba(247,240,220,0.72)"/><circle r="3" fill="rgba(160,185,205,0.85)"/></g><path d="M46 155 C30 148 24 135 30 129 C38 137 43 147 46 155Z" fill="rgba(140,108,28,0.28)"/><g transform="translate(48,205)"><ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(0)"/><ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(45)"/><ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(90)"/><ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.26)" transform="rotate(135)"/><ellipse cx="0" cy="-28" rx="12" ry="19" fill="rgba(91,127,168,0.3)" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.44)" transform="rotate(22)"/><ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.4)" transform="rotate(82)"/><ellipse cx="0" cy="-18" rx="9" ry="14" fill="rgba(91,127,168,0.44)" transform="rotate(142)"/><circle r="9" fill="rgba(247,240,220,0.65)"/><circle r="5" fill="rgba(160,185,205,0.85)"/><circle r="2.5" fill="rgba(247,240,220,0.9)"/></g><path d="M43 258 C27 250 22 237 28 232 C36 240 40 250 43 258Z" fill="rgba(140,108,28,0.25)"/><g transform="translate(44,295)"><ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(0)"/><ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.32)" transform="rotate(72)"/><ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(144)"/><ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.32)" transform="rotate(216)"/><ellipse cx="0" cy="-7" rx="4" ry="7" fill="rgba(91,127,168,0.38)" transform="rotate(288)"/><circle r="3" fill="rgba(247,240,220,0.65)"/></g></svg>`;
-  function mkRose(left,top,flip,size){
+  function mkRose(posCSS,size,op){
     const d=document.createElement('div');
     d.className='bg-rose';
-    d.style.cssText=`width:${size}px;height:${size*3.7}px;${left?'left:-30px':'right:-30px'};top:${top};${flip?'transform:scaleX(-1)':''}`;
+    d.style.cssText=`width:${size}px;height:${Math.round(size*3.7)}px;${posCSS}`;
+    if(op) d.style.opacity=op;
     d.innerHTML=SVG;return d;
   }
   const secs=['.couple-reveal','.events-bg','.countdown-section','.rsvp-section','.savedate-section','.hubungi-section'];
-  secs.forEach((sel,i)=>{
+  secs.forEach((sel)=>{
     const el=document.querySelector(sel);
     if(!el)return;
-    el.insertBefore(mkRose(true,'10%',false,90),el.firstChild);
-    el.insertBefore(mkRose(false,'45%',true,80),el.firstChild);
+    el.insertBefore(mkRose('left:8px;top:5%;',108),el.firstChild);
+    el.insertBefore(mkRose('right:8px;top:32%;transform:scaleX(-1);',98),el.firstChild);
+    el.insertBefore(mkRose('left:50%;top:6%;transform:translateX(-50%);',78,'0.12'),el.firstChild);
+  });
+})();
+
+// ── Extra side florals at top & bottom viewport positions
+(function(){
+  const l=document.querySelector('.side-floral-l');
+  const r=document.querySelector('.side-floral-r');
+  if(!l||!r)return;
+  const svgL=l.innerHTML,svgR=r.innerHTML;
+  [{top:'21%',op:0.32},{top:'79%',op:0.32}].forEach(cfg=>{
+    const dl=document.createElement('div');
+    dl.className='side-floral side-floral-l';
+    dl.style.cssText=`top:${cfg.top};opacity:${cfg.op};width:110px;height:406px;`;
+    dl.innerHTML=svgL;document.body.appendChild(dl);
+    const dr=document.createElement('div');
+    dr.className='side-floral side-floral-r';
+    dr.style.cssText=`top:${cfg.top};opacity:${cfg.op};width:110px;height:406px;`;
+    dr.innerHTML=svgR;document.body.appendChild(dr);
   });
 })();
 
